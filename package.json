@@ -1,0 +1,22 @@
+{
+  "name": "xbox-home",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saviodossantos/xbox-home.git"
+  },
+  "author": "Savio dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saviodossantos/xbox-home/issues"
+  },
+  "homepage": "https://github.com/saviodossantos/xbox-home#readme",
+  "dependencies": {
+    "compass": "^0.1.1"
+  }
+}
