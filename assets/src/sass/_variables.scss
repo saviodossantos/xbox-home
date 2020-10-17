@@ -19,3 +19,14 @@ $border-radius-1: 5px;
 //colors
 $white: #FFFFFF;
 $black: #000000;
+$grey: #2f2f2f;
+$grey-2: #252525;
+$bg-edge: #1E90FF;
+
+
+//font
+@font-face{
+    font-family: Montserrat;
+    src: url(../../../src/font/Montserrat/Montserrat-Regular.ttf);
+}
+

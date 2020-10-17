@@ -1,0 +1,53 @@
+@import "../variables";
+
+// *{
+//     font-family: Montserrat;
+// }
+
+body{
+    background-color: $grey;
+    color: $white;
+
+    & .recentes{
+        margin-top: 120px;
+        color: $black;
+
+        & .card{
+            &:hover{
+                border: 5px solid red; //cor da borda vai mudar com js
+                box-shadow: 0 0 20px rgb(42, 42, 42);
+            }
+        }
+        
+        & .card-principal{
+            height: 287px;
+
+            & p{bottom: 0;}
+        }
+
+        & .card-secundario{
+            height: 150px;
+        }
+
+        & .edge{
+            background-color: $bg-edge;
+            color: $white;
+        }
+    }
+
+
+
+    & .row .mt-3{
+        & .col-4{padding: 0 2px;}
+    }
+    & .col-2, .col-3 /*,.col-4*/{
+        padding: 0 2px ;
+    }
+
+    & footer{
+        background-color: $grey-2;
+        bottom: 0;
+        font-size: 12px;
+    }
+}
+
