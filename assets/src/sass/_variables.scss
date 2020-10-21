@@ -19,14 +19,15 @@ $border-radius-1: 5px;
 //colors
 $white: #FFFFFF;
 $black: #000000;
-$grey: #2f2f2f;
-$grey-2: #252525;
+$fundo: #222222;
+$anuncio: #7e7e7e;
+$grey: #1d1d1d;
 $bg-edge: #1E90FF;
 
 
 //font
 @font-face{
-    font-family: Montserrat;
-    src: url(../../../src/font/Montserrat/Montserrat-Regular.ttf);
+    font-family: 'RobotoCondensed';
+    src: url('../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf');
 }
 

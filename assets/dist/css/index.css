@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+header i {
+  height: 20px;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+body {
+  background-color: #222222;
+  color: #FFFFFF;
+  font-family: "RobotoCondensed", Arial, sans-serif;
+}
+body .perfil img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+body .perfil .gamertag {
+  position: absolute;
+  margin: -53px 73px;
+}
+body .recentes {
+  margin-top: 120px;
+  color: #000000;
+}
+body .recentes .card {
+  font-size: 1.1em;
+  border: 0;
+}
+body .recentes .card:hover {
+  border: 5px solid red;
+  box-shadow: 0 0 20px #2a2a2a;
+}
+body .recentes .card .fundo-escuro {
+  background-image: linear-gradient(to bottom, transparent, #000000);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+body .recentes .card-principal {
+  height: 287px;
+  background-image: url(../img/box1.jpg);
+  background-repeat: no-repeat;
+  background-size: 141%;
+  background-position: center;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .card-principal {
+    background-size: 230%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body .recentes .card-principal {
+    background-size: 169%;
+  }
+}
+body .recentes .card-principal p {
+  color: #FFFFFF;
+}
+body .recentes .card-secundario {
+  height: 150px;
+}
+@media (max-width: 767.98px) {
+  body .recentes .card-secundario {
+    margin: 10px 0;
+    height: 100px;
+  }
+}
+body .recentes .box3 {
+  background-image: url(../img/box3.jpg);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: top;
+}
+body .recentes .box3 p {
+  color: #FFFFFF;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .box3 {
+    background-position: center;
+    background-size: 195%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body .recentes .box3 {
+    background-position: center;
+    background-size: 145%;
+  }
+}
+body .recentes .box4 {
+  background-image: url(../img/box4.jpg);
+  background-repeat: no-repeat;
+  background-size: 133%;
+  background-position: center -45px;
+  margin: 0;
+}
+body .recentes .box4 p {
+  color: #FFFFFF;
+}
+@media (min-width: 360px) and (max-width: 575.98px) {
+  body .recentes .box4 {
+    background-position: center;
+    background-size: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .recentes .box4 {
+    background-position: center -77px;
+    background-size: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .box4 {
+    background-position: center;
+    background-size: 160%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body .recentes .box4 {
+    background-position: center -30px;
+  }
+}
+body .recentes .edge {
+  background-color: #1E90FF;
+  color: #FFFFFF;
+  margin: 0;
+}
+body .recentes .biblioteca, body .recentes .anuncio1, body .recentes .anuncio2, body .recentes .atividade-recente {
+  height: 120px;
+}
+body .recentes .atividade-recente {
+  background-image: url(../img/anuncio1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -27px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .atividade-recente {
+    background-position-y: 0;
+  }
+}
+@media (min-width: 1200px) {
+  body .recentes .atividade-recente {
+    background-position-y: 0;
+  }
+}
+body .recentes .atividade-recente p {
+  color: #FFFFFF;
+  z-index: 1;
+}
+body .recentes .anuncio .card {
+  height: 120px;
+  background-image: url(../img/anuncio2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: -12px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .anuncio .card {
+    background-position-y: 0;
+  }
+}
+@media (min-width: 1200px) {
+  body .recentes .anuncio .card {
+    background-position-y: -61px;
+  }
+}
+body .recentes .anuncio p {
+  color: #7e7e7e;
+}
+body .col-md-2, body .col-md-4 {
+  padding: 0 2px;
+}
+@media (max-width: 767.98px) {
+  body .col-3, body .col-6, body .col-9, body .col-12 {
+    padding: 0 15px 0 15px;
+  }
+}
+body .pl-2px {
+  padding-left: 2px;
+}
+body .pr-2px {
+  padding-right: 2px;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+body footer {
+  background-color: #1d1d1d;
+  bottom: 0;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=index.css.map */
