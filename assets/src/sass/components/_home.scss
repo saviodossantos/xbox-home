@@ -1,14 +1,9 @@
 @import "../variables";
 
-// *{
-//     font-family: Montserrat;
-// }
-
 body {
     background-color: $fundo;
     color: $white;
     font-family: 'RobotoCondensed', Arial, sans-serif;
-
 
     & .perfil {
 
@@ -67,13 +62,24 @@ body {
             }
 
             & p {
-                color: $white;
+                font-size: 20px;
             }
 
         }
 
+        & .card{
+            background-color: $green;
+
+            & p{color: $white;}
+        }
+
         & .card-secundario {
             height: 150px;
+
+            & i{
+                font-size: 64px;
+                color: $white;
+            }
 
             @media(max-width: $grid-max-sm) {
                 margin: 10px 0;
@@ -86,10 +92,6 @@ body {
             background-repeat: no-repeat;
             background-size: 125%;
             background-position: top;
-
-            & p {
-                color: $white;
-            }
 
             @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 background-position: center;
@@ -108,10 +110,6 @@ body {
             background-size: 133%;
             background-position: center -45px;
             margin: 0;
-
-            & p {
-                color: $white;
-            }
 
             @media (min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
                 background-position: center;
@@ -134,13 +132,17 @@ body {
         }
 
         & .edge {
-            background-color: $bg-edge;
-            color: $white;
+            background-color: $blue-edge;
             margin: 0;
         }
 
         & .biblioteca, .anuncio1, .anuncio2, .atividade-recente {
             height: 120px;
+
+            & i{
+                font-size: 64px;
+                color: $white;
+            }
         }
 
         & .atividade-recente { //fifa 21
@@ -157,8 +159,13 @@ body {
                 background-position-y: 0;
             }
 
+            & img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+            }
+
             & p {
-                color: $white;
                 z-index: 1;
             }
         }

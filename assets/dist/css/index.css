@@ -66,10 +66,20 @@ body .recentes .card-principal {
   }
 }
 body .recentes .card-principal p {
+  font-size: 20px;
+}
+body .recentes .card {
+  background-color: #7c0f0f;
+}
+body .recentes .card p {
   color: #FFFFFF;
 }
 body .recentes .card-secundario {
   height: 150px;
+}
+body .recentes .card-secundario i {
+  font-size: 64px;
+  color: #FFFFFF;
 }
 @media (max-width: 767.98px) {
   body .recentes .card-secundario {
@@ -82,9 +92,6 @@ body .recentes .box3 {
   background-repeat: no-repeat;
   background-size: 125%;
   background-position: top;
-}
-body .recentes .box3 p {
-  color: #FFFFFF;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   body .recentes .box3 {
@@ -104,9 +111,6 @@ body .recentes .box4 {
   background-size: 133%;
   background-position: center -45px;
   margin: 0;
-}
-body .recentes .box4 p {
-  color: #FFFFFF;
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
   body .recentes .box4 {
@@ -133,11 +137,14 @@ body .recentes .box4 p {
 }
 body .recentes .edge {
   background-color: #1E90FF;
-  color: #FFFFFF;
   margin: 0;
 }
 body .recentes .biblioteca, body .recentes .anuncio1, body .recentes .anuncio2, body .recentes .atividade-recente {
   height: 120px;
+}
+body .recentes .biblioteca i, body .recentes .anuncio1 i, body .recentes .anuncio2 i, body .recentes .atividade-recente i {
+  font-size: 64px;
+  color: #FFFFFF;
 }
 body .recentes .atividade-recente {
   background-image: url(../img/anuncio1.jpg);
@@ -155,8 +162,12 @@ body .recentes .atividade-recente {
     background-position-y: 0;
   }
 }
+body .recentes .atividade-recente img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
 body .recentes .atividade-recente p {
-  color: #FFFFFF;
   z-index: 1;
 }
 body .recentes .anuncio .card {
