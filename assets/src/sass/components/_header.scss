@@ -2,7 +2,31 @@
 
 header{
 
-    & i{
-        height: 20px;
+    & .perfil {
+
+        & img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            box-shadow: 0 0 15px rgb(42, 42, 42);
+        }
+
+        & .gamertag {
+            position: absolute;
+            margin: -53px 73px;
+
+            & i{
+                font-size: 15px;
+        
+                @media(max-width: $grid-max-xxs){
+                    font-size: 12px;
+                }
+        
+                @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+                    // font-size: 14px;
+                }
+            }
+        }
+
     }
 }

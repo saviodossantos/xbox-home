@@ -1,23 +1,32 @@
 @import "../variables";
 
+*{
+    &::-webkit-scrollbar{width:7px;}
+    &::-webkit-scrollbar-thumb{background-color:$anuncio; border-radius: 10px;}
+}
 body {
-    background-color: $fundo;
+
+    background-color: $fundo !important;
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center -40px;
+
+    @media(max-width: $grid-max-sm){
+        background-position: center 0;
+    }
+    
     color: $white;
     font-family: 'RobotoCondensed', Arial, sans-serif;
 
-    & .perfil {
-
-        & img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50px;
-        }
-
-        & .gamertag {
-            position: absolute;
-            margin: -53px 73px;
-        }
-
+    & .fundo-escuro-bg {
+        background-image: linear-gradient(to bottom, $black, $fundo);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: .7;
+        z-index: -1;
+        top: 0;
     }
 
     & .recentes {
@@ -30,7 +39,7 @@ body {
             border: 0;
 
             &:hover {
-                border: 5px solid red; //cor da borda vai mudar com js
+                border: 8px solid red; //cor da borda vai mudar com js
                 box-shadow: 0 0 20px rgb(42, 42, 42);
             }
 
@@ -47,7 +56,7 @@ body {
 
         & .card-principal { //maior box, warzone
             height: 287px;
-            background-image: url(../img/box1.jpg);
+            background-image: url(../img/box1.png);
             background-repeat: no-repeat;
             background-size: 141%;
             background-position: center;
@@ -63,12 +72,17 @@ body {
 
             & p {
                 font-size: 20px;
+                
+                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                    font-size: 16px;
+                }
             }
 
         }
 
         & .card{
             background-color: $green;
+            border-radius: 0px;
 
             & p{color: $white;}
         }
@@ -76,15 +90,39 @@ body {
         & .card-secundario {
             height: 150px;
 
-            & i{
-                font-size: 64px;
-                color: $white;
-            }
-
             @media(max-width: $grid-max-sm) {
                 margin: 10px 0;
                 height: 100px;
             }
+
+            & i{
+                font-size: 64px;
+                color: $white;
+
+                @media(max-width: $grid-max-xxs){
+                    font-size: 38px;
+                }
+
+                @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+                    font-size: 45px;
+                }
+
+                @media(min-width: $grid-min-sm) and (max-width: $grid-max-md){
+                    font-size: 50px;
+                }
+
+            }
+
+            & p{
+                @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+                    font-size: 13px;
+                }
+
+                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                    font-size: 13px;
+                }
+            }
+
         }
 
         & .box3 { //cyberpunk
@@ -143,6 +181,12 @@ body {
                 font-size: 64px;
                 color: $white;
             }
+
+            & p{
+                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                    font-size: 13px;
+                }
+            }
         }
 
         & .atividade-recente { //fifa 21
@@ -163,6 +207,12 @@ body {
                 width: 40px;
                 height: 40px;
                 border-radius: 50px;
+                box-shadow: 0 0 15px rgb(42, 42, 42);
+
+                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                    width: 30px;
+                    height: 30px;
+                }
             }
 
             & p {
@@ -199,7 +249,7 @@ body {
         padding: 0 2px;
     }
 
-    & .col-3,.col-6,.col-9,.col-12 {
+    & .col-3,.col-4,.col-6,.col-9,.col-12 {
         @media(max-width:$grid-max-sm) {
             padding: 0 15px 0 15px;
         }

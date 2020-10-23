@@ -6,27 +6,58 @@
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
 }
-header i {
-  height: 20px;
+header .perfil img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #2a2a2a;
 }
-
+header .perfil .gamertag {
+  position: absolute;
+  margin: -53px 73px;
+}
+header .perfil .gamertag i {
+  font-size: 15px;
+}
+@media (max-width: 359.98px) {
+  header .perfil .gamertag i {
+    font-size: 12px;
+  }
+}
 @font-face {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
 }
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #7e7e7e;
+  border-radius: 10px;
+}
+
 body {
-  background-color: #222222;
+  background-color: #1a1a1d !important;
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: center -40px;
   color: #FFFFFF;
   font-family: "RobotoCondensed", Arial, sans-serif;
 }
-body .perfil img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
+@media (max-width: 767.98px) {
+  body {
+    background-position: center 0;
+  }
 }
-body .perfil .gamertag {
+body .fundo-escuro-bg {
+  background-image: linear-gradient(to bottom, #000000, #1a1a1d);
+  height: 100%;
+  width: 100%;
   position: absolute;
-  margin: -53px 73px;
+  opacity: 0.7;
+  z-index: -1;
+  top: 0;
 }
 body .recentes {
   margin-top: 120px;
@@ -37,7 +68,7 @@ body .recentes .card {
   border: 0;
 }
 body .recentes .card:hover {
-  border: 5px solid red;
+  border: 8px solid red;
   box-shadow: 0 0 20px #2a2a2a;
 }
 body .recentes .card .fundo-escuro {
@@ -50,7 +81,7 @@ body .recentes .card .fundo-escuro {
 }
 body .recentes .card-principal {
   height: 287px;
-  background-image: url(../img/box1.jpg);
+  background-image: url(../img/box1.png);
   background-repeat: no-repeat;
   background-size: 141%;
   background-position: center;
@@ -68,8 +99,14 @@ body .recentes .card-principal {
 body .recentes .card-principal p {
   font-size: 20px;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .card-principal p {
+    font-size: 16px;
+  }
+}
 body .recentes .card {
   background-color: #7c0f0f;
+  border-radius: 0px;
 }
 body .recentes .card p {
   color: #FFFFFF;
@@ -77,14 +114,39 @@ body .recentes .card p {
 body .recentes .card-secundario {
   height: 150px;
 }
-body .recentes .card-secundario i {
-  font-size: 64px;
-  color: #FFFFFF;
-}
 @media (max-width: 767.98px) {
   body .recentes .card-secundario {
     margin: 10px 0;
     height: 100px;
+  }
+}
+body .recentes .card-secundario i {
+  font-size: 64px;
+  color: #FFFFFF;
+}
+@media (max-width: 359.98px) {
+  body .recentes .card-secundario i {
+    font-size: 38px;
+  }
+}
+@media (min-width: 360px) and (max-width: 575.98px) {
+  body .recentes .card-secundario i {
+    font-size: 45px;
+  }
+}
+@media (min-width: 576px) and (max-width: 991.98px) {
+  body .recentes .card-secundario i {
+    font-size: 50px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body .recentes .card-secundario p {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .card-secundario p {
+    font-size: 13px;
   }
 }
 body .recentes .box3 {
@@ -146,6 +208,11 @@ body .recentes .biblioteca i, body .recentes .anuncio1 i, body .recentes .anunci
   font-size: 64px;
   color: #FFFFFF;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .biblioteca p, body .recentes .anuncio1 p, body .recentes .anuncio2 p, body .recentes .atividade-recente p {
+    font-size: 13px;
+  }
+}
 body .recentes .atividade-recente {
   background-image: url(../img/anuncio1.jpg);
   background-repeat: no-repeat;
@@ -166,6 +233,13 @@ body .recentes .atividade-recente img {
   width: 40px;
   height: 40px;
   border-radius: 50px;
+  box-shadow: 0 0 15px #2a2a2a;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body .recentes .atividade-recente img {
+    width: 30px;
+    height: 30px;
+  }
 }
 body .recentes .atividade-recente p {
   z-index: 1;
@@ -194,7 +268,7 @@ body .col-md-2, body .col-md-4 {
   padding: 0 2px;
 }
 @media (max-width: 767.98px) {
-  body .col-3, body .col-6, body .col-9, body .col-12 {
+  body .col-3, body .col-4, body .col-6, body .col-9, body .col-12 {
     padding: 0 15px 0 15px;
   }
 }
@@ -222,7 +296,7 @@ body .pr-2px {
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
 }
 body footer {
-  background-color: #1d1d1d;
+  background-color: #111111;
   bottom: 0;
   font-size: 12px;
 }
