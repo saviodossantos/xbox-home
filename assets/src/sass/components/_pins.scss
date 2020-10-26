@@ -2,6 +2,9 @@
 
 .pins{
 
+    & a:hover{text-decoration: none; color: $white;}
+    & a:active, :link{color: $white;}
+
     & .card{
         font-size: 1.1em;
         // height: 90px;
