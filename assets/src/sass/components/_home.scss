@@ -11,6 +11,7 @@ body {
     background-repeat: no-repeat;
     background-size: 130%;
     background-position: center -40px;
+    // background-attachment: fixed;
 
     @media(max-width: $grid-max-sm){
         background-position: center 0;
@@ -23,7 +24,7 @@ body {
         background-image: linear-gradient(to bottom, $black, $fundo);
         height: 100%;
         width: 100%;
-        position: absolute;
+        position: fixed;
         opacity: .7;
         z-index: -1;
         top: 0;
@@ -41,6 +42,10 @@ body {
             &:hover {
                 border: 8px solid red; //cor da borda vai mudar com js
                 box-shadow: 0 0 20px rgb(42, 42, 42);
+
+                @media(max-width: $grid-max-md){
+                    border: none;
+                }
             }
 
             & .fundo-escuro {
@@ -58,7 +63,7 @@ body {
             height: 287px;
             background-image: url(../img/box1.png);
             background-repeat: no-repeat;
-            background-size: 141%;
+            background-size: 170%;
             background-position: center;
 
             @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
