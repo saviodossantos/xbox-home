@@ -1,1 +1,83 @@
 @import "../variables";
+
+.pins{
+
+    & .card{
+        font-size: 1.1em;
+        // height: 90px;
+        // width: ;
+
+    }
+
+    & .sub-card{
+
+        height: 100px;
+
+        & i{
+            font-size: 50px;
+        }
+    }
+
+    & .groups{
+
+        height: 210px;
+
+        & i{
+            transform: rotate(45deg);
+            // transform: rotateX(5deg);
+        }
+        
+    }
+
+    & i{
+        font-size: 74px;
+    }
+
+    & .pin1{
+        background-image: url(../img/pins/pin1.jpg);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        background-position: center;
+
+        @media(max-width: $grid-max-sm){
+            background-size: 150%;
+        }
+    }
+
+    & .pin2{
+        background-image: url(../img/pins/pin2.jpg);
+        background-repeat: no-repeat;
+        background-size: 180%;
+        background-position: center;
+    }
+
+    & .pin3{
+        background-image: url(../img/pins/pin3.jpg);
+        background-size: 100%;
+        background-position: center;
+    }
+
+    & .pin4{
+        background-image: url(../img/pins/pin4.jpg);
+        background-size: 100%;
+        background-position: center;
+    }
+
+    & .pin5{
+        background-image: url(../img/pins/pin5.jpg);
+        background-size: 120%;
+        background-position: center;
+    }
+
+
+    // & .col-md-2{
+    //     padding: 0 5px;
+    // }
+
+    // & .col-3,.col-4,.col-6,.col-9,.col-12 {
+    //     @media(max-width:$grid-max-sm) {
+    //         padding: 0 15px 0 15px;
+    //     }
+    // }
+
+}

@@ -7,7 +7,7 @@
 body {
 
     background-color: $fundo !important;
-    background: url(../img/bg.jpg);
+    background: url(../img/home/bg.jpg);
     background-repeat: no-repeat;
     background-size: 130%;
     background-position: center -40px;
@@ -19,6 +19,13 @@ body {
     
     color: $white;
     font-family: 'RobotoCondensed', Arial, sans-serif;
+
+    & .card{
+        background-color: $red;
+        border-radius: 0px;
+
+        & p{color: $white;}
+    }
 
     & .fundo-escuro-bg {
         background-image: linear-gradient(to bottom, $black, $fundo);
@@ -61,7 +68,7 @@ body {
 
         & .card-principal { //maior box, warzone
             height: 287px;
-            background-image: url(../img/box1.png);
+            background-image: url(../img/home/box1.png);
             background-repeat: no-repeat;
             background-size: 170%;
             background-position: center;
@@ -83,13 +90,6 @@ body {
                 }
             }
 
-        }
-
-        & .card{
-            background-color: $green;
-            border-radius: 0px;
-
-            & p{color: $white;}
         }
 
         & .card-secundario {
@@ -131,7 +131,7 @@ body {
         }
 
         & .box3 { //cyberpunk
-            background-image: url(../img/box3.jpg);
+            background-image: url(../img/home/box3.jpg);
             background-repeat: no-repeat;
             background-size: 125%;
             background-position: top;
@@ -148,7 +148,7 @@ body {
         }
 
         & .box4 { //gamepass
-            background-image: url(../img/box4.jpg);
+            background-image: url(../img/home/box4.jpg);
             background-repeat: no-repeat;
             background-size: 133%;
             background-position: center -45px;
@@ -195,7 +195,7 @@ body {
         }
 
         & .atividade-recente { //fifa 21
-            background-image: url(../img/anuncio1.jpg);
+            background-image: url(../img/home/anuncio1.jpg);
             background-repeat: no-repeat;
             background-size: 100%;
             background-position-y: -27px;
@@ -229,7 +229,7 @@ body {
 
             & .card {
                 height: 120px;
-                background-image: url(../img/anuncio2.png);
+                background-image: url(../img/home/anuncio2.png);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position-y: -12px;
@@ -245,8 +245,8 @@ body {
 
             & p{color: $anuncio;}
         }
-    }
 
+    }
 
 
 
@@ -259,6 +259,7 @@ body {
             padding: 0 15px 0 15px;
         }
     }
+    
 
     & .pl-2px {
         padding-left: 2px;

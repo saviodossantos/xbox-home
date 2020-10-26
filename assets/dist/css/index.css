@@ -38,7 +38,7 @@ header .perfil .gamertag i {
 
 body {
   background-color: #1a1a1d !important;
-  background: url(../img/bg.jpg);
+  background: url(../img/home/bg.jpg);
   background-repeat: no-repeat;
   background-size: 130%;
   background-position: center -40px;
@@ -49,6 +49,13 @@ body {
   body {
     background-position: center 0;
   }
+}
+body .card {
+  background-color: #7c0f0f;
+  border-radius: 0px;
+}
+body .card p {
+  color: #FFFFFF;
 }
 body .fundo-escuro-bg {
   background-image: linear-gradient(to bottom, #000000, #1a1a1d);
@@ -86,7 +93,7 @@ body .recentes .card .fundo-escuro {
 }
 body .recentes .card-principal {
   height: 287px;
-  background-image: url(../img/box1.png);
+  background-image: url(../img/home/box1.png);
   background-repeat: no-repeat;
   background-size: 170%;
   background-position: center;
@@ -108,13 +115,6 @@ body .recentes .card-principal p {
   body .recentes .card-principal p {
     font-size: 16px;
   }
-}
-body .recentes .card {
-  background-color: #7c0f0f;
-  border-radius: 0px;
-}
-body .recentes .card p {
-  color: #FFFFFF;
 }
 body .recentes .card-secundario {
   height: 150px;
@@ -155,7 +155,7 @@ body .recentes .card-secundario i {
   }
 }
 body .recentes .box3 {
-  background-image: url(../img/box3.jpg);
+  background-image: url(../img/home/box3.jpg);
   background-repeat: no-repeat;
   background-size: 125%;
   background-position: top;
@@ -173,7 +173,7 @@ body .recentes .box3 {
   }
 }
 body .recentes .box4 {
-  background-image: url(../img/box4.jpg);
+  background-image: url(../img/home/box4.jpg);
   background-repeat: no-repeat;
   background-size: 133%;
   background-position: center -45px;
@@ -219,7 +219,7 @@ body .recentes .biblioteca i, body .recentes .anuncio1 i, body .recentes .anunci
   }
 }
 body .recentes .atividade-recente {
-  background-image: url(../img/anuncio1.jpg);
+  background-image: url(../img/home/anuncio1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: -27px;
@@ -251,7 +251,7 @@ body .recentes .atividade-recente p {
 }
 body .recentes .anuncio .card {
   height: 120px;
-  background-image: url(../img/anuncio2.png);
+  background-image: url(../img/home/anuncio2.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-y: -12px;
@@ -288,6 +288,57 @@ body .pr-2px {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
 }
+.pins .card {
+  font-size: 1.1em;
+}
+.pins .sub-card {
+  height: 100px;
+}
+.pins .sub-card i {
+  font-size: 50px;
+}
+.pins .groups {
+  height: 210px;
+}
+.pins .groups i {
+  transform: rotate(45deg);
+}
+.pins i {
+  font-size: 74px;
+}
+.pins .pin1 {
+  background-image: url(../img/pins/pin1.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: center;
+}
+@media (max-width: 767.98px) {
+  .pins .pin1 {
+    background-size: 150%;
+  }
+}
+.pins .pin2 {
+  background-image: url(../img/pins/pin2.jpg);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: center;
+}
+.pins .pin3 {
+  background-image: url(../img/pins/pin3.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+.pins .pin4 {
+  background-image: url(../img/pins/pin4.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+.pins .pin5 {
+  background-image: url(../img/pins/pin5.jpg);
+  background-size: 120%;
+  background-position: center;
+}
+
 @font-face {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
