@@ -14,7 +14,7 @@
 
     & .sub-card{
 
-        height: 100px;
+        height: 99px;
 
         & i{
             font-size: 50px;
@@ -39,18 +39,18 @@
     & .pin1{ //cuphead
         background-image: url(../img/pins/pin1.jpg);
         background-repeat: no-repeat;
-        background-size: 110%;
+        background-size: 150%;
         background-position: center;
 
         @media(max-width: $grid-max-sm){
-            background-size: 150%;
+            background-repeat: repeat;
         }
     }
 
     & .pin2{ //spotify
         background-image: url(../img/pins/pin2.jpg);
         background-repeat: no-repeat;
-        background-size: 180%;
+        background-size: 230%;
         background-position: center;
     }
 
@@ -74,7 +74,7 @@
 
     & .pin6{ //ea play
         background-image: url(../img/pins/pin6.png);
-        background-size: 120%;
+        background-size: 140%;
         background-position: center;
     }
 
@@ -90,22 +90,31 @@
         background-position: center;
     }
 
-    & .pin9{ //watch dogs legion
-        background-image: url(../img/pins/pin9.jpg);
-        background-size: 120%;
-        background-position: center;
+    & .edge{
+        background-color: $blue-edge;
     }
+
+    // & .pin9{ //watch dogs legion
+    //     background-image: url(../img/pins/pin9.jpg);
+    //     background-size: 120%;
+    //     background-position: center;
+    // }
 
     & .pin10{ //quantum break
         background-image: url(../img/pins/pin10.png);
-        background-size: 120%;
-        background-position: center;
+        background-size: 170%;
+        background-position: center -15px;
+
+        @media(max-width: $grid-max-sm){
+            background-size: 150%;
+
+        }
     }
 
-    & .pin11{ //state of decay
+    & .pin11{ //state of decay 2
         background-image: url(../img/pins/pin11.jpg);
-        background-size: 150%;
-        background-position: center;
+        background-size: 175%;
+        background-position: center -1px;
     }
 
     & .pin12{ //twitch
@@ -116,22 +125,18 @@
 
 
     & .pl-2px {
-        padding-left: 2px;
+        padding-left: 2px !important;
         
     }
 
     & .pr-2px {
-        padding-right: 2px;
+        padding-right: 2px !important;
     }
 
-    // & .col-md-2{
-    //     padding: 0 5px;
-    // }
-
-    // & .col-3,.col-4,.col-6,.col-9,.col-12 {
-    //     @media(max-width:$grid-max-sm) {
-    //         padding: 0 15px 0 15px;
-    //     }
-    // }
+    & .col-3, .col-12 {
+        @media(max-width:$grid-max-sm) {
+            padding: 0 15px 0 15px;
+        }
+    }
 
 }
