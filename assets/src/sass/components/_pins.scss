@@ -3,7 +3,7 @@
 .pins{
 
     & a:hover{text-decoration: none; color: $white;}
-    & a:active, :link{color: $white;}
+    & a:active, :link, :visited{color: $white;}
 
     & .card{
         font-size: 1.1em;
@@ -36,7 +36,7 @@
         font-size: 74px;
     }
 
-    & .pin1{
+    & .pin1{ //cuphead
         background-image: url(../img/pins/pin1.jpg);
         background-repeat: no-repeat;
         background-size: 110%;
@@ -47,31 +47,82 @@
         }
     }
 
-    & .pin2{
+    & .pin2{ //spotify
         background-image: url(../img/pins/pin2.jpg);
         background-repeat: no-repeat;
         background-size: 180%;
         background-position: center;
     }
 
-    & .pin3{
+    & .pin3{ //prime video
         background-image: url(../img/pins/pin3.jpg);
         background-size: 100%;
         background-position: center;
     }
 
-    & .pin4{
+    & .pin4{ //netflix
         background-image: url(../img/pins/pin4.jpg);
-        background-size: 100%;
+        background-size: 170%;
         background-position: center;
     }
 
-    & .pin5{
+    & .pin5{ //youtube
         background-image: url(../img/pins/pin5.jpg);
         background-size: 120%;
         background-position: center;
     }
 
+    & .pin6{ //ea play
+        background-image: url(../img/pins/pin6.png);
+        background-size: 120%;
+        background-position: center;
+    }
+
+    & .pin7{ //telecine play
+        background-image: url(../img/pins/pin7.jpg);
+        background-size: 120%;
+        background-position: center;
+    }
+
+    & .pin8{ //facebook watch
+        background-image: url(../img/pins/pin8.png);
+        background-size: 120%;
+        background-position: center;
+    }
+
+    & .pin9{ //watch dogs legion
+        background-image: url(../img/pins/pin9.jpg);
+        background-size: 120%;
+        background-position: center;
+    }
+
+    & .pin10{ //quantum break
+        background-image: url(../img/pins/pin10.png);
+        background-size: 120%;
+        background-position: center;
+    }
+
+    & .pin11{ //state of decay
+        background-image: url(../img/pins/pin11.jpg);
+        background-size: 150%;
+        background-position: center;
+    }
+
+    & .pin12{ //twitch
+        background-image: url(../img/pins/pin12.jpg);
+        background-size: 120%;
+        background-position: center;
+    }
+
+
+    & .pl-2px {
+        padding-left: 2px;
+        
+    }
+
+    & .pr-2px {
+        padding-right: 2px;
+    }
 
     // & .col-md-2{
     //     padding: 0 5px;

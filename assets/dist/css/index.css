@@ -292,7 +292,7 @@ body .pr-2px {
   text-decoration: none;
   color: #FFFFFF;
 }
-.pins a:active, .pins :link {
+.pins a:active, .pins :link, .pins :visited {
   color: #FFFFFF;
 }
 .pins .card {
@@ -337,13 +337,54 @@ body .pr-2px {
 }
 .pins .pin4 {
   background-image: url(../img/pins/pin4.jpg);
-  background-size: 100%;
+  background-size: 170%;
   background-position: center;
 }
 .pins .pin5 {
   background-image: url(../img/pins/pin5.jpg);
   background-size: 120%;
   background-position: center;
+}
+.pins .pin6 {
+  background-image: url(../img/pins/pin6.png);
+  background-size: 120%;
+  background-position: center;
+}
+.pins .pin7 {
+  background-image: url(../img/pins/pin7.jpg);
+  background-size: 120%;
+  background-position: center;
+}
+.pins .pin8 {
+  background-image: url(../img/pins/pin8.png);
+  background-size: 120%;
+  background-position: center;
+}
+.pins .pin9 {
+  background-image: url(../img/pins/pin9.jpg);
+  background-size: 120%;
+  background-position: center;
+}
+.pins .pin10 {
+  background-image: url(../img/pins/pin10.png);
+  background-size: 120%;
+  background-position: center;
+}
+.pins .pin11 {
+  background-image: url(../img/pins/pin11.jpg);
+  background-size: 150%;
+  background-position: center;
+}
+.pins .pin12 {
+  background-image: url(../img/pins/pin12.jpg);
+  background-size: 120%;
+  background-position: center;
+}
+.pins .pl-2px {
+  padding-left: 2px;
+}
+.pins .pr-2px {
+  padding-right: 2px;
 }
 
 @font-face {
