@@ -86,7 +86,6 @@ body .recentes .card {
   border: 0;
 }
 body .recentes .card:hover {
-  border: 8px solid red;
   box-shadow: 0 0 20px #2a2a2a;
 }
 @media (max-width: 991.98px) {
@@ -127,9 +126,6 @@ body .recentes .card-principal {
   body .recentes .card-principal {
     background-size: 169%;
   }
-}
-body .recentes .card-principal p {
-  font-size: 20px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   body .recentes .card-principal p {
@@ -173,6 +169,22 @@ body .recentes .card-secundario i {
   body .recentes .card-secundario p {
     font-size: 13px;
   }
+}
+body .recentes .descricao {
+  background-color: #3f3f3f;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+@media (max-width: 767.98px) {
+  body .recentes .descricao {
+    opacity: 1;
+    font-size: 14px;
+  }
+}
+body .recentes .card:hover .descricao {
+  opacity: 1;
 }
 body .recentes .box3 {
   background-image: url(../img/home/box3.jpg);
