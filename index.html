@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/dist/3rd/css-3rd/font-awesome/css/all.css">
+    <link rel="stylesheet" href="assets/dist/3rd/css-3rd/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/dist/css/index.css">
+    <link rel="icon" href="assets/dist/img/header/icon.png"> <!-- linka o ícone da aba -->
+    <title>Xbox Home</title>
+</head>
+
+<body onload="time()">
+    <div class="fundo-escuro-bg"></div>
+
+    <header class="container mt-4">
+
+        <div class="row">
+            <div class="col-8 col-md-10 perfil">
+
+                <img src="assets/dist/img/header/perfil.png" alt="Imagem de perfil">
+
+                <div class="gamertag">
+                    <span class="justify-content-center font-weight-bold">SnowRJ</span><br>
+                    <i class="fas fa-trophy text-bottom"></i>
+                    <span class="justify-content-center text-bottom">43992</span>
+                </div>
+
+
+            </div>
+
+            <div class="col-4 col-md-2 d-flex justify-content-end align-self-center">
+
+                <i class="fas fa-microphone-slash mt-1"></i>
+                <i class="fas fa-battery-full pl-3 mt-1"></i>
+                <span class="justify-content-end ml-3 font-weight-bold" id="horaAtual">
+                    <!-- hora atual sendo mostrada pelo js -->
+                </span>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section class="container recentes mb-5">
+
+        <div class="row">
+            <div class="col-12 col-md-4 pr-md-3">
+
+                <a href="https://www.microsoft.com/pt-br/p/ori-and-the-will-of-the-wisps/9n8cd0xzklp4" target="_blank">
+                    <div class="card card-principal">
+
+                        <p class="mt-auto font-weight-bold descricao">Ori and the Will of the Wisps</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-2 pr-2px align-self-md-end">
+                <a href="https://www.xbox.com/pt-BR/" target="_blank">
+                    <div class="card card-secundario">
+
+                        <div class="text-center mt-md-4 mt-sm-2">
+                            <i class="fas fa-shopping-bag mt-3"></i>
+                        </div>
+
+                        <p class="mt-auto descricao">Microsoft Store</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-2 pl-2px align-self-md-end">
+                <div class="card card-secundario box3">
+
+                    <p class="mt-auto descricao">Cyberpunk 2077</p>
+
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 pr-2px align-self-md-end">
+                <a href="https://www.xbox.com/pt-BR/xbox-game-pass" target="_blank">
+                    <div class="card card-secundario box4">
+
+                        <p class="mt-auto descricao">Xbox Game Pass</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-2 pl-2px align-self-md-end">
+                <a href="https://www.microsoft.com/pt-br/edge" target="_blank">
+                    <div class="card card-secundario edge">
+
+                        <div class="text-center mt-md-4 mt-sm-2">
+                            <i class="fab fa-edge-legacy mt-3"></i>
+                        </div>
+
+                        <p class="mt-auto descricao">Microsoft Edge</p>
+
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="row mt-md-4 mt-3">
+
+            <div class="col-12 col-md-4 pr-md-3 mb-2">
+                <div class="card biblioteca">
+
+                    <div class="text-center mt-4">
+                        <i class="fa fa-gamepad"></i> <!-- chess -->
+                    </div>
+
+                    <p class="mt-auto ml-2">Meus jogos e apps</p>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 mb-2">
+                <div class="card atividade-recente">
+
+                    <div class="mt-2 mr-3 ml-auto">
+                        <img src="assets/dist/img/home/perfil-amigo1.jpg" alt="Imagem de perfil amigo">
+                        <img src="assets/dist/img/home/perfil-amigo2.jpg" alt="Imagem de perfil amigo">
+                    </div>
+
+                    <p class="mt-auto ml-3">
+                        2 amigos
+                        <span class="d-block">jogando EA SPORTS™ FIFA 21</span>
+                    </p>
+                    <div class="fundo-escuro"></div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-4 anuncio">
+                <div class="card">
+
+                    <div class="fundo-escuro"></div>
+
+                </div>
+                <div class="float-right">
+                    <p>
+                        <small>Anúncio</small>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container pins mb-5">
+
+        <h2 class="title font-weight-bold">Pins</h2>
+
+        <div class="row">
+
+            <div class="col-12 col-md-3">
+
+                <div class="card groups">
+
+                    <i class="text-center fas fa-thumbtack mt-auto"></i>
+                    <p class="mt-auto ml-2">Grupos</p>
+                </div>
+
+            </div>
+
+            <div class="col-3 col-md-2 mt-2 mt-md-0 pr-2px">
+
+                <a href="https://www.microsoft.com/pt-br/p/cuphead/9njrx71m5x9p" target="_blank">
+
+                    <div class="card pin1">
+                        <div class="sub-card"></div>
+                    </div>
+
+                </a>
+
+                <a href="https://www.youtube.com/" target="_blank">
+
+                    <div class="card pin5 mt-2">
+                        <div class="sub-card"></div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-3 col-md-2 mt-2 mt-md-0 pl-2px pr-2px">
+                <a href="https://www.spotify.com/br/" target="_blank">
+
+                    <div class="card pin2">
+                        <div class="sub-card"></div>
+                    </div>
+
+                </a>
+
+                <a href="https://support.xbox.com/pt-BR/" target="_blank">
+                    <div class="card mt-2">
+                        <div class="sub-card">
+
+                            <div class="text-center mt-3">
+                                <i class="fas fa-question"></i>
+                            </div>
+
+                            <p class="mt-auto ml-2">Ajuda</p>
+
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-3 col-md-2 mt-2 mt-md-0 pl-2px pr-2px">
+                <a href="https://www.primevideo.com/?_encoding=UTF8&language=pt_BR" target="_blank">
+
+                    <div class="card pin3">
+                        <div class="sub-card"></div>
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-3 col-md-2 mt-2 mt-md-0 pl-2px">
+
+                <a href="https://www.netflix.com/br/" target="_blank">
+
+                    <div class="card pin4">
+                        <div class="sub-card"></div>
+                    </div>
+
+                </a>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </section>
+
+    <section class="container store mb-5">
+
+        <h2 class="title font-weight-bold">Store</h2>
+
+
+
+    </section>
+
+    <section class="container gamepass mb-5">
+
+        <h2 class="title font-weight-bold">Game Pass</h2>
+
+
+
+    </section>
+
+    <footer class="mt-5 pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                    <p>*Descrição do projeto</p>
+
+                    <p>based on OS Version 10.0.19041.3503 and most recently.</p>
+
+                    <p>&copy2020</p>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+<script src="assets/src/js/main.js"></script>
+
+</html>
