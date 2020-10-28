@@ -5,10 +5,42 @@
     & a:hover{text-decoration: none; color: $white;}
     & a:active, :link, :visited{color: $white;}
 
+    & .title{
+        @media(min-width: $grid-min-md){
+            padding: 0 2px;
+        }
+    }
+
     & .card{
         font-size: 1.1em;
-        // height: 90px;
-        // width: ;
+        border: 0;
+
+    }
+
+    & .descricao{
+        background-color: $fundo-descricao;
+        margin: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        padding: 5px 10px;
+        position: absolute;
+        transition: opacity .5s;
+
+        @media(max-width: $grid-max-sm){
+            opacity: 1;
+            font-size: 14px;
+            padding: 5px;
+
+        }
+
+        @media(min-width: $grid-min-md){
+            font-size: 16px;
+        }
+    }
+
+    & .card:hover .descricao{
+        opacity: 1;
 
     }
 
@@ -27,7 +59,6 @@
 
         & i{
             transform: rotate(45deg);
-            // transform: rotateX(5deg);
         }
         
     }
@@ -136,6 +167,12 @@
     & .col-3, .col-12 {
         @media(max-width:$grid-max-sm) {
             padding: 0 15px 0 15px;
+        }
+    }
+
+    & .col-md-4{
+        @media(min-width:$grid-min-md) {
+            padding: 0 15px 0 2px;
         }
     }
 

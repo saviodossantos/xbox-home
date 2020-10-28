@@ -317,8 +317,39 @@ body .pr-2px {
 .pins a:active, .pins :link, .pins :visited {
   color: #FFFFFF;
 }
+@media (min-width: 768px) {
+  .pins .title {
+    padding: 0 2px;
+  }
+}
 .pins .card {
   font-size: 1.1em;
+  border: 0;
+}
+.pins .descricao {
+  background-color: #3f3f3f;
+  margin: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  padding: 5px 10px;
+  position: absolute;
+  transition: opacity 0.5s;
+}
+@media (max-width: 767.98px) {
+  .pins .descricao {
+    opacity: 1;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .pins .descricao {
+    font-size: 16px;
+  }
+}
+.pins .card:hover .descricao {
+  opacity: 1;
 }
 .pins .sub-card {
   height: 99px;
@@ -414,6 +445,11 @@ body .pr-2px {
 @media (max-width: 767.98px) {
   .pins .col-3, .pins .col-12 {
     padding: 0 15px 0 15px;
+  }
+}
+@media (min-width: 768px) {
+  .pins .col-md-4 {
+    padding: 0 15px 0 2px;
   }
 }
 
