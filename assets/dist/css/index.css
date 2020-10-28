@@ -45,9 +45,20 @@ body {
   color: #FFFFFF;
   font-family: "RobotoCondensed", Arial, sans-serif;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 359.98px) {
+  body {
+    background-position: center 46px;
+  }
+}
+@media (min-width: 360px) and (max-width: 767.98px) {
   body {
     background-position: center 0;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-position: center -85px;
+    background-size: auto;
   }
 }
 body .card {
@@ -75,7 +86,6 @@ body .recentes .card {
   border: 0;
 }
 body .recentes .card:hover {
-  border: 8px solid red;
   box-shadow: 0 0 20px #2a2a2a;
 }
 @media (max-width: 991.98px) {
@@ -88,7 +98,6 @@ body .recentes .card .fundo-escuro {
   height: 100%;
   width: 100%;
   position: absolute;
-  border-radius: 5px;
   opacity: 0.7;
 }
 body .recentes .card-principal {
@@ -97,6 +106,16 @@ body .recentes .card-principal {
   background-repeat: no-repeat;
   background-size: 170%;
   background-position: center;
+}
+@media (max-width: 359.98px) {
+  body .recentes .card-principal {
+    background-size: cover;
+  }
+}
+@media (min-width: 360px) and (max-width: 767.98px) {
+  body .recentes .card-principal {
+    background-size: cover;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   body .recentes .card-principal {
@@ -107,9 +126,6 @@ body .recentes .card-principal {
   body .recentes .card-principal {
     background-size: 169%;
   }
-}
-body .recentes .card-principal p {
-  font-size: 20px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   body .recentes .card-principal p {
@@ -153,6 +169,22 @@ body .recentes .card-secundario i {
   body .recentes .card-secundario p {
     font-size: 13px;
   }
+}
+body .recentes .descricao {
+  background-color: #3f3f3f;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+@media (max-width: 767.98px) {
+  body .recentes .descricao {
+    opacity: 1;
+    font-size: 14px;
+  }
+}
+body .recentes .card:hover .descricao {
+  opacity: 1;
 }
 body .recentes .box3 {
   background-image: url(../img/home/box3.jpg);
@@ -222,17 +254,7 @@ body .recentes .atividade-recente {
   background-image: url(../img/home/anuncio1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: -27px;
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .atividade-recente {
-    background-position-y: 0;
-  }
-}
-@media (min-width: 1200px) {
-  body .recentes .atividade-recente {
-    background-position-y: 0;
-  }
+  background-position: top;
 }
 body .recentes .atividade-recente img {
   width: 40px;
