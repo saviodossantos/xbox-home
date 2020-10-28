@@ -13,8 +13,17 @@ body {
     background-position: center -40px;
     // background-attachment: fixed;
 
-    @media(max-width: $grid-max-sm){
+    @media(max-width: $grid-max-xxs){
+        background-position: center 46px;
+    }
+
+    @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
         background-position: center 0;
+    }
+
+    @media(min-width: $grid-min-xl){
+        background-position: center -85px;
+        background-size: auto;
     }
     
     color: $white;
@@ -60,18 +69,25 @@ body {
                 height: 100%;
                 width: 100%;
                 position: absolute;
-                border-radius: 5px;
                 opacity: .7;
             }
 
         }
 
-        & .card-principal { //maior box, warzone
+        & .card-principal { //maior box, ori
             height: 287px;
             background-image: url(../img/home/box1.png);
             background-repeat: no-repeat;
             background-size: 170%;
             background-position: center;
+
+            @media(max-width: $grid-max-xxs){
+                background-size: cover;
+            }
+
+            @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
+                background-size: cover;
+            }
 
             @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 background-size: 230%;
@@ -198,15 +214,7 @@ body {
             background-image: url(../img/home/anuncio1.jpg);
             background-repeat: no-repeat;
             background-size: 100%;
-            background-position-y: -27px;
-
-            @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
-                background-position-y: 0;
-            }
-
-            @media(min-width: $grid-min-xl) {
-                background-position-y: 0;
-            }
+            background-position: top;
 
             & img {
                 width: 40px;
