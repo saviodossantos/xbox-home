@@ -15,3 +15,7 @@ function time(){
     setTimeout('time()',1000);
     
 }
+
+function menu(){
+    alert("🚨 Você descobriu um recurso que (ainda) não está disponível!\n" + "Parabéns! 🥳🥳\n\n" + "➡ Em breve, ao clicar aqui, será capaz personalizar o conteúdo da home, como opacidade e cor dos blocos, sendo o mais fiel possível ao sistema.")
+}
