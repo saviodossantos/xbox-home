@@ -3,18 +3,50 @@
 .pins{
 
     & a:hover{text-decoration: none; color: $white;}
-    & a:active, :link{color: $white;}
+    & a:active, :link, :visited{color: $white;}
+
+    & .title{
+        @media(min-width: $grid-min-md){
+            padding: 0 2px;
+        }
+    }
 
     & .card{
         font-size: 1.1em;
-        // height: 90px;
-        // width: ;
+        border: 0;
+
+    }
+
+    & .descricao{
+        background-color: $fundo-descricao;
+        margin: 0;
+        bottom: 0;
+        opacity: 0;
+        width: 100%;
+        padding: 5px 10px;
+        position: absolute;
+        transition: opacity .5s;
+
+        @media(max-width: $grid-max-sm){
+            opacity: 1;
+            font-size: 14px;
+            padding: 5px;
+
+        }
+
+        @media(min-width: $grid-min-md){
+            font-size: 16px;
+        }
+    }
+
+    & .card:hover .descricao{
+        opacity: 1;
 
     }
 
     & .sub-card{
 
-        height: 100px;
+        height: 99px;
 
         & i{
             font-size: 50px;
@@ -27,7 +59,6 @@
 
         & i{
             transform: rotate(45deg);
-            // transform: rotateX(5deg);
         }
         
     }
@@ -36,51 +67,113 @@
         font-size: 74px;
     }
 
-    & .pin1{
+    & .pin1{ //cuphead
         background-image: url(../img/pins/pin1.jpg);
         background-repeat: no-repeat;
-        background-size: 110%;
+        background-size: 150%;
         background-position: center;
 
         @media(max-width: $grid-max-sm){
-            background-size: 150%;
+            background-repeat: repeat;
         }
     }
 
-    & .pin2{
+    & .pin2{ //spotify
         background-image: url(../img/pins/pin2.jpg);
         background-repeat: no-repeat;
-        background-size: 180%;
+        background-size: 230%;
         background-position: center;
     }
 
-    & .pin3{
+    & .pin3{ //prime video
         background-image: url(../img/pins/pin3.jpg);
         background-size: 100%;
         background-position: center;
     }
 
-    & .pin4{
+    & .pin4{ //netflix
         background-image: url(../img/pins/pin4.jpg);
-        background-size: 100%;
+        background-size: 170%;
         background-position: center;
     }
 
-    & .pin5{
+    & .pin5{ //youtube
         background-image: url(../img/pins/pin5.jpg);
         background-size: 120%;
         background-position: center;
     }
 
+    & .pin6{ //ea play
+        background-image: url(../img/pins/pin6.png);
+        background-size: 140%;
+        background-position: center;
+    }
 
-    // & .col-md-2{
-    //     padding: 0 5px;
+    & .pin7{ //telecine play
+        background-image: url(../img/pins/pin7.jpg);
+        background-size: 120%;
+        background-position: center;
+    }
+
+    & .pin8{ //facebook watch
+        background-image: url(../img/pins/pin8.png);
+        background-size: 120%;
+        background-position: center;
+    }
+
+    & .edge{
+        background-color: $blue-edge;
+    }
+
+    // & .pin9{ //watch dogs legion
+    //     background-image: url(../img/pins/pin9.jpg);
+    //     background-size: 120%;
+    //     background-position: center;
     // }
 
-    // & .col-3,.col-4,.col-6,.col-9,.col-12 {
-    //     @media(max-width:$grid-max-sm) {
-    //         padding: 0 15px 0 15px;
-    //     }
-    // }
+    & .pin10{ //quantum break
+        background-image: url(../img/pins/pin10.png);
+        background-size: 170%;
+        background-position: center -15px;
+
+        @media(max-width: $grid-max-sm){
+            background-size: 150%;
+
+        }
+    }
+
+    & .pin11{ //state of decay 2
+        background-image: url(../img/pins/pin11.jpg);
+        background-size: 175%;
+        background-position: center -1px;
+    }
+
+    & .pin12{ //twitch
+        background-image: url(../img/pins/pin12.jpg);
+        background-size: 120%;
+        background-position: center;
+    }
+
+
+    & .pl-2px {
+        padding-left: 2px !important;
+        
+    }
+
+    & .pr-2px {
+        padding-right: 2px !important;
+    }
+
+    & .col-3, .col-12 {
+        @media(max-width:$grid-max-sm) {
+            padding: 0 15px 0 15px;
+        }
+    }
+
+    & .col-md-4{
+        @media(min-width:$grid-min-md) {
+            padding: 0 15px 0 2px;
+        }
+    }
 
 }
