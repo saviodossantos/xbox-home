@@ -2,9 +2,6 @@
 
 .pins{
 
-    & a:hover{text-decoration: none; color: $white;}
-    & a:active, :link, :visited{color: $white;}
-
     & .title{
         @media(min-width: $grid-min-md){
             padding: 0 2px;
@@ -73,8 +70,23 @@
         background-size: 150%;
         background-position: center;
 
-        @media(max-width: $grid-max-sm){
-            background-repeat: repeat;
+        @media(max-width: $grid-max-xxs){
+            background-size: cover;
+            background-position: center -18px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: cover;
+            background-position: center -18px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-size: cover;
+            background-position: center -26px;
+        }
+
+        @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg){
+            background-size: 164%;
         }
     }
 
@@ -83,75 +95,235 @@
         background-repeat: no-repeat;
         background-size: 230%;
         background-position: center;
+
+        @media(max-width: $grid-max-xxs){
+            background-size: 230px;
+            background-position: center -77px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
+            background-size: 260px;
+            background-position: center -95px;
+        }
+
     }
 
     & .pin3{ //prime video
         background-image: url(../img/pins/pin3.jpg);
         background-size: 100%;
         background-position: center;
+
+        @media(max-width: $grid-max-xxs){
+            background-size: 105px;
+            background-position: center -25px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: 120px;
+            background-position: center -18px;
+            
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-position: center -25px;
+            background-repeat: no-repeat;
+        }
+
+        @media(min-width: $grid-min-md) and (max-width: $grid-max-lg){
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        @media(min-width: $grid-min-xl){
+            background-size: 120px;
+            background-position: center;
+
+        }
+        
     }
 
     & .pin4{ //netflix
         background-image: url(../img/pins/pin4.jpg);
         background-size: 170%;
         background-position: center;
+        
+        @media(max-width: $grid-max-xxs){
+            background-size: 125px;
+            background-position: center -153px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: 124px;
+            background-position: center -150px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-size: 160px;
+            background-position: center -45px;
+        }
+
     }
 
     & .pin5{ //youtube
         background-image: url(../img/pins/pin5.jpg);
         background-size: 120%;
         background-position: center;
+        
+        @media(max-width: $grid-max-xxs){
+            background-image: url(../img/pins/pin5-xxs.jpg);
+            background-size: 140px;
+            background-position: center -30px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: 100px;
+            background-position: center -17px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-position: center -30px;
+        }
     }
 
     & .pin6{ //ea play
         background-image: url(../img/pins/pin6.png);
         background-size: 140%;
         background-position: center;
+        
+        @media(max-width: $grid-max-xxs){
+            background-size: 115px;
+            background-position: center -20px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: 135px;
+            background-position: center -35px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-position: center -50px;
+        }
     }
 
     & .pin7{ //telecine play
         background-image: url(../img/pins/pin7.jpg);
         background-size: 120%;
         background-position: center;
+        
+        @media(max-width: $grid-max-xxs){
+            background-size: 104px;
+            background-position: center -20px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: 104px;
+            background-position: center -20px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-size: 75%;
+            background-position: center -15px;
+        }
     }
 
     & .pin8{ //facebook watch
         background-image: url(../img/pins/pin8.png);
-        background-size: 120%;
+        background-size: 170px;
         background-position: center;
+        
+        @media(max-width: $grid-max-xxs){
+            background-size: 120px;
+            background-position: center -33px;
+            
+            & p{
+                font-size: 12px;
+            }
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: 115px;
+            background-position: center -33px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-size: 125px;
+            background-position: center -26px;
+        }
     }
 
     & .edge{
         background-color: $blue-edge;
     }
 
-    // & .pin9{ //watch dogs legion
-    //     background-image: url(../img/pins/pin9.jpg);
-    //     background-size: 120%;
-    //     background-position: center;
-    // }
-
     & .pin10{ //quantum break
         background-image: url(../img/pins/pin10.png);
         background-size: 170%;
         background-position: center -15px;
 
-        @media(max-width: $grid-max-sm){
-            background-size: 150%;
-
+        @media(max-width: $grid-max-xxs){
+            background-size: 180px;
+            background-position: center -37px;
         }
+
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: 200px;
+            background-position: center -45px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-size: 200%;
+            background-position: center -60px;
+        }
+
+        @media(min-width: $grid-min-md){
+            background-size: 300px;
+            background-position: center -60px;
+        }
+        
     }
 
     & .pin11{ //state of decay 2
         background-image: url(../img/pins/pin11.jpg);
         background-size: 175%;
         background-position: center -1px;
+        
+        @media(max-width: $grid-max-xxs){
+            background-position: center -17px;
+        }
+
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            background-size: cover;
+            background-position: center -4px;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-size: 100%;
+            background-position: center -7px;
+        }
+
+        @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            background-size: 185px;
+            background-position: center -10px;
+        }
     }
 
     & .pin12{ //twitch
         background-image: url(../img/pins/pin12.jpg);
         background-size: 120%;
         background-position: center;
+        
+        @media(max-width: $grid-max-xxs){
+            background-image: url(../img/pins/pin12-xxs.jpg);
+            background-size: cover;
+            background-position: center -15px;
+        }
+        
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
+            background-size: 155px;
+            background-position: center -40px;
+        }
+
     }
 
 
