@@ -29,11 +29,26 @@ body {
     color: $white;
     font-family: 'RobotoCondensed', Arial, sans-serif;
 
+    & a:hover, a:active, a:link, a:visited{text-decoration: none; color: $white;}
+
+
     & .card{
         background-color: $red;
         border-radius: 0px;
+        font-size: 1.1em;
+        border: 0;
+
+        &:hover {
+            // border: 8px solid red; //cor da borda vai mudar com js
+            box-shadow: 0 0 20px rgb(42, 42, 42);
+
+            @media(max-width: $grid-max-md){
+                border: none;
+            }
+        }
 
         & p{color: $white;}
+
     }
 
     & .fundo-escuro-bg {
@@ -51,18 +66,6 @@ body {
         color: $black;
 
         & .card {
-
-            font-size: 1.1em;
-            border: 0;
-
-            &:hover {
-                // border: 8px solid red; //cor da borda vai mudar com js
-                box-shadow: 0 0 20px rgb(42, 42, 42);
-
-                @media(max-width: $grid-max-md){
-                    border: none;
-                }
-            }
 
             & .fundo-escuro {
                 background-image: linear-gradient(to bottom, transparent, $black);

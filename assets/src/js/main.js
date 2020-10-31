@@ -10,7 +10,7 @@ function time(){
     if(hora.toString().length == 1) hora = '0' + hora;
     if(minutos.toString().length == 1) minutos = '0' + minutos;
 
-    document.getElementById('horaAtual').innerHTML = hora + ":" + minutos;
+    document.getElementById('horario').innerHTML = hora + ":" + minutos;
 
     setTimeout('time()',1000);
     

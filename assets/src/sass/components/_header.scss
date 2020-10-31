@@ -22,11 +22,12 @@ header{
                     font-size: 12px;
                 }
         
-                @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
-                    // font-size: 14px;
-                }
             }
         }
 
+    }
+
+    & #microphone, #batery, #horario{
+        font-size: 18px;
     }
 }
