@@ -1,1 +1,104 @@
 @import "../variables";
+
+.store{
+
+    & .card-store{
+        height: 210px;
+        
+        & i{
+            font-size: 74px;
+        }
+    }
+
+    & .tendencia1{ //fortnite
+        height: 122%;
+        background-image: url(../img/store/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media(max-width:$grid-max-sm){            
+            height: 235px;
+        }
+
+
+        & p{
+            z-index: 1;
+        }
+    }
+
+    & .tendencia2{ //resident evil 7
+        height: 60%;
+        background-image: url(../img/store/banner1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+
+        @media(max-width:$grid-max-sm){            
+            height: 235px;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            background-size: 400px;
+            background-position: 52% -35px;
+        }
+
+        & p{
+            z-index: 1;
+        }
+    }
+
+    & .tendencia3{ //alien isolation
+        height: 60%;
+        background-image: url(../img/store/banner2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+
+        @media(max-width:$grid-max-sm){            
+            height: 100%;
+            background-size: 270%;
+            background-position: left top;
+        }
+
+        & p{
+            z-index: 1;
+        }
+    }
+
+    & .card{
+        
+        & .sub-card{
+
+            & p{
+                padding: 15px 10px;
+                margin: 0;
+                font-size: 15px;
+
+                & i{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    & .pr-2px{
+        padding: 0 0 0 2px;
+
+        @media(max-width:$grid-max-sm) {
+            padding-left: 15px !important;
+        }
+    }
+
+    & .pl-2px{
+        padding: 0 2px 0 0;
+
+        @media(max-width:$grid-max-sm) {
+            padding-right: 15px !important;
+        }
+    }
+
+}

@@ -2,12 +2,6 @@
 
 .pins{
 
-    & .title{
-        @media(min-width: $grid-min-md){
-            padding: 0 2px;
-        }
-    }
-
     & .card{
         font-size: 1.1em;
         border: 0;
@@ -324,28 +318,6 @@
             background-position: center -40px;
         }
 
-    }
-
-
-    & .pl-2px {
-        padding-left: 2px !important;
-        
-    }
-
-    & .pr-2px {
-        padding-right: 2px !important;
-    }
-
-    & .col-3, .col-12 {
-        @media(max-width:$grid-max-sm) {
-            padding: 0 15px 0 15px;
-        }
-    }
-
-    & .col-md-4{
-        @media(min-width:$grid-min-md) {
-            padding: 0 15px 0 2px;
-        }
     }
 
 }

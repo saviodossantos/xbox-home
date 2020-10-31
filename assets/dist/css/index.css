@@ -6,32 +6,6 @@
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
 }
-header .perfil img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
-  box-shadow: 0 0 15px #2a2a2a;
-}
-header .perfil .gamertag {
-  position: absolute;
-  margin: -53px 73px;
-}
-header .perfil .gamertag i {
-  font-size: 15px;
-}
-@media (max-width: 359.98px) {
-  header .perfil .gamertag i {
-    font-size: 12px;
-  }
-}
-header #microphone, header #batery, header #horario {
-  font-size: 18px;
-}
-
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
-}
 *::-webkit-scrollbar {
   width: 7px;
 }
@@ -65,6 +39,11 @@ body {
     background-size: auto;
   }
 }
+@media (min-width: 768px) {
+  body .title {
+    padding: 0 2px;
+  }
+}
 body a:hover, body a:active, body a:link, body a:visited {
   text-decoration: none;
   color: #FFFFFF;
@@ -74,6 +53,13 @@ body .card {
   border-radius: 0px;
   font-size: 1.1em;
   border: 0;
+}
+body .card .fundo-escuro {
+  background-image: linear-gradient(to bottom, transparent, #000000);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.7;
 }
 body .card:hover {
   box-shadow: 0 0 20px #2a2a2a;
@@ -95,18 +81,61 @@ body .fundo-escuro-bg {
   z-index: -1;
   top: 0;
 }
-body .recentes {
+@media (max-width: 767.98px) {
+  body .col-3, body .col-4, body .col-6, body .col-9, body .col-12 {
+    padding: 0 15px 0 15px !important;
+  }
+}
+body .pl-2px {
+  padding-left: 2px !important;
+}
+body .pr-2px {
+  padding-right: 2px !important;
+}
+body .col-md-2, body .col-md-3, body .col-md-6 {
+  padding: 0 2px;
+}
+@media (min-width: 768px) {
+  body .col-md-3, body .col-md-4 {
+    padding: 0 15px 0 2px;
+  }
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+header .perfil img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px #2a2a2a;
+}
+header .perfil .gamertag {
+  position: absolute;
+  margin: -53px 73px;
+}
+header .perfil .gamertag i {
+  font-size: 15px;
+}
+@media (max-width: 359.98px) {
+  header .perfil .gamertag i {
+    font-size: 12px;
+  }
+}
+header #microphone, header #batery, header #horario {
+  font-size: 18px;
+}
+
+@font-face {
+  font-family: "RobotoCondensed";
+  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+.recentes {
   margin-top: 120px;
   color: #000000;
 }
-body .recentes .card .fundo-escuro {
-  background-image: linear-gradient(to bottom, transparent, #000000);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  opacity: 0.7;
-}
-body .recentes .card-principal {
+.recentes .card-principal {
   height: 287px;
   background-image: url(../img/home/box1.png);
   background-repeat: no-repeat;
@@ -114,69 +143,69 @@ body .recentes .card-principal {
   background-position: center;
 }
 @media (max-width: 359.98px) {
-  body .recentes .card-principal {
+  .recentes .card-principal {
     background-size: cover;
   }
 }
 @media (min-width: 360px) and (max-width: 767.98px) {
-  body .recentes .card-principal {
+  .recentes .card-principal {
     background-size: cover;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .card-principal {
+  .recentes .card-principal {
     background-size: 230%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  body .recentes .card-principal {
+  .recentes .card-principal {
     background-size: 169%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .card-principal p {
+  .recentes .card-principal p {
     font-size: 16px;
   }
 }
-body .recentes .card-secundario {
+.recentes .card-secundario {
   height: 150px;
 }
 @media (max-width: 767.98px) {
-  body .recentes .card-secundario {
+  .recentes .card-secundario {
     margin: 10px 0;
     height: 100px;
   }
 }
-body .recentes .card-secundario i {
+.recentes .card-secundario i {
   font-size: 64px;
   color: #FFFFFF;
 }
 @media (max-width: 359.98px) {
-  body .recentes .card-secundario i {
+  .recentes .card-secundario i {
     font-size: 38px;
   }
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
-  body .recentes .card-secundario i {
+  .recentes .card-secundario i {
     font-size: 45px;
   }
 }
 @media (min-width: 576px) and (max-width: 991.98px) {
-  body .recentes .card-secundario i {
+  .recentes .card-secundario i {
     font-size: 50px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  body .recentes .card-secundario p {
+  .recentes .card-secundario p {
     font-size: 13px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .card-secundario p {
+  .recentes .card-secundario p {
     font-size: 13px;
   }
 }
-body .recentes .descricao {
+.recentes .descricao {
   background-color: #3f3f3f;
   margin: 0;
   padding: 5px 0 5px 10px;
@@ -184,33 +213,33 @@ body .recentes .descricao {
   transition: opacity 0.5s;
 }
 @media (max-width: 767.98px) {
-  body .recentes .descricao {
+  .recentes .descricao {
     opacity: 1;
     font-size: 14px;
   }
 }
-body .recentes .card:hover .descricao {
+.recentes .card:hover .descricao {
   opacity: 1;
 }
-body .recentes .box3 {
+.recentes .box3 {
   background-image: url(../img/home/box3.jpg);
   background-repeat: no-repeat;
   background-size: 125%;
   background-position: top;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .box3 {
+  .recentes .box3 {
     background-position: center;
     background-size: 195%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  body .recentes .box3 {
+  .recentes .box3 {
     background-position: center;
     background-size: 145%;
   }
 }
-body .recentes .box4 {
+.recentes .box4 {
   background-image: url(../img/home/box4.jpg);
   background-repeat: no-repeat;
   background-size: 133%;
@@ -218,66 +247,66 @@ body .recentes .box4 {
   margin: 0;
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
-  body .recentes .box4 {
+  .recentes .box4 {
     background-position: center;
     background-size: 100%;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  body .recentes .box4 {
+  .recentes .box4 {
     background-position: center -77px;
     background-size: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .box4 {
+  .recentes .box4 {
     background-position: center;
     background-size: 160%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  body .recentes .box4 {
+  .recentes .box4 {
     background-position: center -30px;
   }
 }
-body .recentes .edge {
+.recentes .edge {
   background-color: #1E90FF;
   margin: 0;
 }
-body .recentes .biblioteca, body .recentes .anuncio1, body .recentes .anuncio2, body .recentes .atividade-recente {
+.recentes .biblioteca, .recentes .anuncio1, .recentes .anuncio2, .recentes .atividade-recente {
   height: 120px;
 }
-body .recentes .biblioteca i, body .recentes .anuncio1 i, body .recentes .anuncio2 i, body .recentes .atividade-recente i {
+.recentes .biblioteca i, .recentes .anuncio1 i, .recentes .anuncio2 i, .recentes .atividade-recente i {
   font-size: 64px;
   color: #FFFFFF;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .biblioteca p, body .recentes .anuncio1 p, body .recentes .anuncio2 p, body .recentes .atividade-recente p {
+  .recentes .biblioteca p, .recentes .anuncio1 p, .recentes .anuncio2 p, .recentes .atividade-recente p {
     font-size: 13px;
   }
 }
-body .recentes .atividade-recente {
+.recentes .atividade-recente {
   background-image: url(../img/home/anuncio1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: top;
 }
-body .recentes .atividade-recente img {
+.recentes .atividade-recente img {
   width: 40px;
   height: 40px;
   border-radius: 50px;
   box-shadow: 0 0 15px #2a2a2a;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .atividade-recente img {
+  .recentes .atividade-recente img {
     width: 30px;
     height: 30px;
   }
 }
-body .recentes .atividade-recente p {
+.recentes .atividade-recente p {
   z-index: 1;
 }
-body .recentes .anuncio .card {
+.recentes .anuncio .card {
   height: 120px;
   background-image: url(../img/home/anuncio2.png);
   background-repeat: no-repeat;
@@ -285,41 +314,22 @@ body .recentes .anuncio .card {
   background-position-y: -12px;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  body .recentes .anuncio .card {
+  .recentes .anuncio .card {
     background-position-y: 0;
   }
 }
 @media (min-width: 1200px) {
-  body .recentes .anuncio .card {
+  .recentes .anuncio .card {
     background-position-y: -61px;
   }
 }
-body .recentes .anuncio p {
+.recentes .anuncio p {
   color: #7e7e7e;
-}
-body .col-md-2, body .col-md-4 {
-  padding: 0 2px;
-}
-@media (max-width: 767.98px) {
-  body .col-3, body .col-4, body .col-6, body .col-9, body .col-12 {
-    padding: 0 15px 0 15px;
-  }
-}
-body .pl-2px {
-  padding-left: 2px;
-}
-body .pr-2px {
-  padding-right: 2px;
 }
 
 @font-face {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
-}
-@media (min-width: 768px) {
-  .pins .title {
-    padding: 0 2px;
-  }
 }
 .pins .card {
   font-size: 1.1em;
@@ -642,27 +652,97 @@ body .pr-2px {
     background-position: center -40px;
   }
 }
-.pins .pl-2px {
-  padding-left: 2px !important;
-}
-.pins .pr-2px {
-  padding-right: 2px !important;
-}
-@media (max-width: 767.98px) {
-  .pins .col-3, .pins .col-12 {
-    padding: 0 15px 0 15px;
-  }
-}
-@media (min-width: 768px) {
-  .pins .col-md-4 {
-    padding: 0 15px 0 2px;
-  }
-}
 
 @font-face {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
 }
+.store .card-store {
+  height: 210px;
+}
+.store .card-store i {
+  font-size: 74px;
+}
+.store .tendencia1 {
+  height: 122%;
+  background-image: url(../img/store/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 767.98px) {
+  .store .tendencia1 {
+    height: 235px;
+  }
+}
+.store .tendencia1 p {
+  z-index: 1;
+}
+.store .tendencia2 {
+  height: 60%;
+  background-image: url(../img/store/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+@media (max-width: 767.98px) {
+  .store .tendencia2 {
+    height: 235px;
+    background-size: cover;
+    background-position: bottom;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .store .tendencia2 {
+    background-size: 400px;
+    background-position: 52% -35px;
+  }
+}
+.store .tendencia2 p {
+  z-index: 1;
+}
+.store .tendencia3 {
+  height: 60%;
+  background-image: url(../img/store/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 767.98px) {
+  .store .tendencia3 {
+    height: 100%;
+    background-size: 270%;
+    background-position: left top;
+  }
+}
+.store .tendencia3 p {
+  z-index: 1;
+}
+.store .card .sub-card p {
+  padding: 15px 10px;
+  margin: 0;
+  font-size: 15px;
+}
+.store .card .sub-card p i {
+  font-size: 18px;
+}
+.store .pr-2px {
+  padding: 0 0 0 2px;
+}
+@media (max-width: 767.98px) {
+  .store .pr-2px {
+    padding-left: 15px !important;
+  }
+}
+.store .pl-2px {
+  padding: 0 2px 0 0;
+}
+@media (max-width: 767.98px) {
+  .store .pl-2px {
+    padding-right: 15px !important;
+  }
+}
+
 @font-face {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
