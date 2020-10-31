@@ -1,301 +1,204 @@
 @import "../variables";
 
-*{
-    &::-webkit-scrollbar{width:7px;}
-    &::-webkit-scrollbar-thumb{background-color:$anuncio; border-radius: 10px;}
-}
-body {
+.recentes {
+    margin-top: 120px;
+    color: $black;
 
-    background-color: $fundo !important;
-    background: url(../img/home/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 130%;
-    background-position: center -40px;
-    // background-attachment: fixed;
+    & .card-principal { //maior box, ori
+        height: 287px;
+        background-image: url(../img/home/box1.png);
+        background-repeat: no-repeat;
+        background-size: 170%;
+        background-position: center;
 
-    @media(max-width: $grid-max-xxs){
-        background-position: center 46px;
-    }
+        @media(max-width: $grid-max-xxs){
+            background-size: cover;
+        }
 
-    @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
-        background-position: center 0;
-    }
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
+            background-size: cover;
+        }
 
-    @media(min-width: $grid-min-xl){
-        background-position: center -85px;
-        background-size: auto;
-    }
-    
-    color: $white;
-    font-family: 'RobotoCondensed', Arial, sans-serif;
+        @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
+            background-size: 230%;
+        }
 
-    & a:hover, a:active, a:link, a:visited{text-decoration: none; color: $white;}
+        @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
 
+            background-size: 169%;
+        }
 
-    & .card{
-        background-color: $red;
-        border-radius: 0px;
-        font-size: 1.1em;
-        border: 0;
-
-        &:hover {
-            // border: 8px solid red; //cor da borda vai mudar com js
-            box-shadow: 0 0 20px rgb(42, 42, 42);
-
-            @media(max-width: $grid-max-md){
-                border: none;
+        & p {
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                font-size: 16px;
             }
         }
 
-        & p{color: $white;}
-
     }
 
-    & .fundo-escuro-bg {
-        background-image: linear-gradient(to bottom, $black, $fundo);
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        opacity: .7;
-        z-index: -1;
-        top: 0;
-    }
+    & .card-secundario {
+        height: 150px;
 
-    & .recentes {
-        margin-top: 120px;
-        color: $black;
-
-        & .card {
-
-            & .fundo-escuro {
-                background-image: linear-gradient(to bottom, transparent, $black);
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                opacity: .7;
-            }
-
+        @media(max-width: $grid-max-sm) {
+            margin: 10px 0;
+            height: 100px;
         }
 
-        & .card-principal { //maior box, ori
-            height: 287px;
-            background-image: url(../img/home/box1.png);
-            background-repeat: no-repeat;
-            background-size: 170%;
-            background-position: center;
+        & i{
+            font-size: 64px;
+            color: $white;
 
             @media(max-width: $grid-max-xxs){
-                background-size: cover;
+                font-size: 38px;
             }
 
-            @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
-                background-size: cover;
+            @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+                font-size: 45px;
             }
 
-            @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
-                background-size: 230%;
-            }
-
-            @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
-
-                background-size: 169%;
-            }
-
-            & p {
-
-                
-                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
-                    font-size: 16px;
-                }
+            @media(min-width: $grid-min-sm) and (max-width: $grid-max-md){
+                font-size: 50px;
             }
 
         }
 
-        & .card-secundario {
-            height: 150px;
-
-            @media(max-width: $grid-max-sm) {
-                margin: 10px 0;
-                height: 100px;
+        & p{
+            @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+                font-size: 13px;
             }
 
-            & i{
-                font-size: 64px;
-                color: $white;
-
-                @media(max-width: $grid-max-xxs){
-                    font-size: 38px;
-                }
-
-                @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
-                    font-size: 45px;
-                }
-
-                @media(min-width: $grid-min-sm) and (max-width: $grid-max-md){
-                    font-size: 50px;
-                }
-
-            }
-
-            & p{
-                @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
-                    font-size: 13px;
-                }
-
-                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
-                    font-size: 13px;
-                }
-            }
-
-        }
-
-        & .descricao{
-            background-color: $fundo-descricao;
-            margin: 0;
-            padding: 5px 0 5px 10px;
-            opacity: 0;
-            transition: opacity .5s;
-
-            @media(max-width: $grid-max-sm){
-                opacity: 1;
-                font-size: 14px;
-
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                font-size: 13px;
             }
         }
 
-        & .card:hover .descricao{
+    }
+
+    & .descricao{
+        background-color: $fundo-descricao;
+        margin: 0;
+        padding: 5px 0 5px 10px;
+        opacity: 0;
+        transition: opacity .5s;
+
+        @media(max-width: $grid-max-sm){
             opacity: 1;
+            font-size: 14px;
 
         }
+    }
 
-        & .box3 { //cyberpunk
-            background-image: url(../img/home/box3.jpg);
-            background-repeat: no-repeat;
-            background-size: 125%;
-            background-position: top;
+    & .card:hover .descricao{
+        opacity: 1;
 
-            @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
-                background-position: center;
-                background-size: 195%;
+    }
+
+    & .box3 { //cyberpunk
+        background-image: url(../img/home/box3.jpg);
+        background-repeat: no-repeat;
+        background-size: 125%;
+        background-position: top;
+
+        @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
+            background-position: center;
+            background-size: 195%;
+        }
+
+        @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
+            background-position: center;
+            background-size: 145%;
+        }
+    }
+
+    & .box4 { //gamepass
+        background-image: url(../img/home/box4.jpg);
+        background-repeat: no-repeat;
+        background-size: 133%;
+        background-position: center -45px;
+        margin: 0;
+
+        @media (min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
+            background-position: center;
+            background-size: 100%;
+        }
+
+        @media (min-width: $grid-min-sm) and (max-width: $grid-max-sm) {
+            background-position: center -77px;
+            background-size: 100%;
+        }
+
+        @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
+            background-position: center;
+            background-size: 160%;
+        }
+
+        @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
+            background-position: center -30px;
+        }
+    }
+
+    & .edge {
+        background-color: $blue-edge;
+        margin: 0;
+    }
+
+    & .biblioteca, .anuncio1, .anuncio2, .atividade-recente {
+        height: 120px;
+
+        & i{
+            font-size: 64px;
+            color: $white;
+        }
+
+        & p{
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                font-size: 13px;
             }
+        }
+    }
 
-            @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
-                background-position: center;
-                background-size: 145%;
+    & .atividade-recente { //fifa 21
+        background-image: url(../img/home/anuncio1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: top;
+
+        & img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            box-shadow: 0 0 15px rgb(42, 42, 42);
+
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                width: 30px;
+                height: 30px;
             }
         }
 
-        & .box4 { //gamepass
-            background-image: url(../img/home/box4.jpg);
-            background-repeat: no-repeat;
-            background-size: 133%;
-            background-position: center -45px;
-            margin: 0;
-
-            @media (min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
-                background-position: center;
-                background-size: 100%;
-            }
-
-            @media (min-width: $grid-min-sm) and (max-width: $grid-max-sm) {
-                background-position: center -77px;
-                background-size: 100%;
-            }
-
-            @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
-                background-position: center;
-                background-size: 160%;
-            }
-
-            @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
-                background-position: center -30px;
-            }
+        & p {
+            z-index: 1;
         }
+    }
 
-        & .edge {
-            background-color: $blue-edge;
-            margin: 0;
-        }
+    & .anuncio { //black ops cold war
 
-        & .biblioteca, .anuncio1, .anuncio2, .atividade-recente {
+        & .card {
             height: 120px;
-
-            & i{
-                font-size: 64px;
-                color: $white;
-            }
-
-            & p{
-                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
-                    font-size: 13px;
-                }
-            }
-        }
-
-        & .atividade-recente { //fifa 21
-            background-image: url(../img/home/anuncio1.jpg);
+            background-image: url(../img/home/anuncio2.png);
             background-repeat: no-repeat;
             background-size: 100%;
-            background-position: top;
+            background-position-y: -12px;
 
-            & img {
-                width: 40px;
-                height: 40px;
-                border-radius: 50px;
-                box-shadow: 0 0 15px rgb(42, 42, 42);
-
-                @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
-                    width: 30px;
-                    height: 30px;
-                }
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
+                background-position-y: 0;
             }
 
-            & p {
-                z-index: 1;
+            @media(min-width: $grid-min-xl) {
+                background-position-y: -61px;
             }
         }
 
-        & .anuncio { //black ops cold war
-
-            & .card {
-                height: 120px;
-                background-image: url(../img/home/anuncio2.png);
-                background-repeat: no-repeat;
-                background-size: 100%;
-                background-position-y: -12px;
-
-                @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
-                    background-position-y: 0;
-                }
-
-                @media(min-width: $grid-min-xl) {
-                    background-position-y: -61px;
-                }
-            }
-
-            & p{color: $anuncio;}
-        }
-
+        & p{color: $anuncio;}
     }
 
-
-
-    & .col-md-2,.col-md-4 {
-        padding: 0 2px;
-    }
-
-    & .col-3,.col-4,.col-6,.col-9,.col-12 {
-        @media(max-width:$grid-max-sm) {
-            padding: 0 15px 0 15px;
-        }
-    }
-    
-
-    & .pl-2px {
-        padding-left: 2px;
-    }
-
-    & .pr-2px {
-        padding-right: 2px;
-    }
 }
