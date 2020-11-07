@@ -747,6 +747,133 @@ header #microphone, header #batery, header #horario {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
 }
+.gamepass .card-gamepass {
+  background-image: url(../img/gamepass/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 135%;
+  background-position: center -70px;
+  height: 210px;
+}
+@media (max-width: 991.98px) {
+  .gamepass .card-gamepass {
+    background-size: cover;
+    background-position: center;
+  }
+}
+.gamepass .card-gamepass i {
+  font-size: 74px;
+}
+.gamepass .banner1 {
+  height: 122%;
+  background-image: url(../img/gamepass/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+@media (max-width: 767.98px) {
+  .gamepass .banner1 {
+    height: 235px;
+  }
+}
+.gamepass .banner1 p {
+  z-index: 1;
+}
+.gamepass .banner2 {
+  height: 60%;
+  background-image: url(../img/gamepass/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: 135%;
+  background-position: 60% -41px;
+}
+@media (max-width: 767.98px) {
+  .gamepass .banner2 {
+    height: 300px;
+    background-size: cover;
+    background-position: 85%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .gamepass .banner2 {
+    background-size: 187%;
+    background-position: 90% -20px;
+  }
+}
+.gamepass .banner2 p {
+  z-index: 1;
+}
+.gamepass .banner3 {
+  height: 60%;
+  background-image: url(../img/gamepass/banner3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media (max-width: 767.98px) {
+  .gamepass .banner3 {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.gamepass .banner3 p {
+  z-index: 1;
+  font-size: 1rem;
+}
+.gamepass .banner4 {
+  height: 100%;
+  background-image: url(../img/gamepass/banner4.jpg);
+  background-repeat: no-repeat;
+  background-size: 101%;
+  background-position: center -2px;
+}
+@media (max-width: 767.98px) {
+  .gamepass .banner4 {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+}
+.gamepass .banner4 p {
+  z-index: 1;
+}
+.gamepass .banner5 {
+  height: 100%;
+  background-image: url(../img/gamepass/banner5.jpg);
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: left -10px;
+}
+@media (max-width: 767.98px) {
+  .gamepass .banner5 {
+    height: 300px;
+    background-size: cover;
+    background-position: 52%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .gamepass .banner5 {
+    background-size: cover;
+    background-position: center;
+  }
+}
+.gamepass .banner5 p {
+  z-index: 1;
+}
+.gamepass .card .sub-card p {
+  padding: 15px 10px;
+  margin: 0;
+  font-size: 15px;
+}
+.gamepass .card .sub-card p i {
+  font-size: 18px;
+}
+.gamepass .pr-2px {
+  padding: 0 0 0 2px;
+}
+.gamepass .pl-2px {
+  padding: 0 2px 0 0;
+}
+
 @font-face {
   font-family: "RobotoCondensed";
   src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
