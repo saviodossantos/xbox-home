@@ -3,6 +3,8 @@
 .recentes {
     margin-top: 120px;
     color: $black;
+    margin-bottom: 7rem;
+    & p{font-size: 1rem;}
 
     & .card-principal { //maior box, ori
         height: 287px;

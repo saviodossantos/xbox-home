@@ -2,6 +2,8 @@
 
 .store{
 
+    margin-bottom: 7rem;
+
     & .card-store{
         height: 210px;
         
@@ -24,29 +26,31 @@
 
         & p{
             z-index: 1;
+            font-size: 1rem;
         }
     }
 
-    & .tendencia2{ //resident evil 7
+    & .tendencia2{ //watch dogs legion
         height: 60%;
-        background-image: url(../img/store/banner1.jpg);
+        background-image: url(../img/store/banner1-2.jpg);
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
+        background-size: 140%;
+        background-position: center -55px;
 
         @media(max-width:$grid-max-sm){            
             height: 235px;
-            background-size: cover;
-            background-position: bottom;
+            background-size: 568px;
+            background-position: 46% bottom;
         }
 
         @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
             background-size: 400px;
-            background-position: 52% -35px;
+            background-position: 48% -60px;
         }
 
         & p{
             z-index: 1;
+            font-size: 1rem;
         }
     }
 
@@ -66,6 +70,7 @@
 
         & p{
             z-index: 1;
+            font-size: 1rem;
         }
     }
 

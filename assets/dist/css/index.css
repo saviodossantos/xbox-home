@@ -1,10 +1,5 @@
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
-}
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+* {
+  font-family: roboto_condensedregular;
 }
 *::-webkit-scrollbar {
   width: 7px;
@@ -101,15 +96,12 @@ body .col-md-2, body .col-md-3, body .col-md-6 {
   }
 }
 
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
-}
 header .perfil img {
   width: 60px;
   height: 60px;
   border-radius: 50px;
   box-shadow: 0 0 15px #2a2a2a;
+  cursor: pointer;
 }
 header .perfil .gamertag {
   position: absolute;
@@ -127,13 +119,13 @@ header #microphone, header #batery, header #horario {
   font-size: 18px;
 }
 
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
-}
 .recentes {
   margin-top: 120px;
   color: #000000;
+  margin-bottom: 7rem;
+}
+.recentes p {
+  font-size: 1rem;
 }
 .recentes .card-principal {
   height: 287px;
@@ -327,9 +319,11 @@ header #microphone, header #batery, header #horario {
   color: #7e7e7e;
 }
 
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+.pins {
+  margin-bottom: 7rem;
+}
+.pins p {
+  font-size: 1rem;
 }
 .pins .card {
   font-size: 1.1em;
@@ -361,7 +355,7 @@ header #microphone, header #batery, header #horario {
   opacity: 1;
 }
 .pins .sub-card {
-  height: 99px;
+  height: 101px;
 }
 .pins .sub-card i {
   font-size: 50px;
@@ -652,10 +646,14 @@ header #microphone, header #batery, header #horario {
     background-position: center -40px;
   }
 }
+@media (min-width: 768px) {
+  .pins .col-lg-3 {
+    padding-right: 15px !important;
+  }
+}
 
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+.store {
+  margin-bottom: 7rem;
 }
 .store .card-store {
   height: 210px;
@@ -677,29 +675,31 @@ header #microphone, header #batery, header #horario {
 }
 .store .tendencia1 p {
   z-index: 1;
+  font-size: 1rem;
 }
 .store .tendencia2 {
   height: 60%;
-  background-image: url(../img/store/banner1.jpg);
+  background-image: url(../img/store/banner1-2.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
+  background-size: 140%;
+  background-position: center -55px;
 }
 @media (max-width: 767.98px) {
   .store .tendencia2 {
     height: 235px;
-    background-size: cover;
-    background-position: bottom;
+    background-size: 568px;
+    background-position: 46% bottom;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .store .tendencia2 {
     background-size: 400px;
-    background-position: 52% -35px;
+    background-position: 48% -60px;
   }
 }
 .store .tendencia2 p {
   z-index: 1;
+  font-size: 1rem;
 }
 .store .tendencia3 {
   height: 60%;
@@ -717,6 +717,7 @@ header #microphone, header #batery, header #horario {
 }
 .store .tendencia3 p {
   z-index: 1;
+  font-size: 1rem;
 }
 .store .card .sub-card p {
   padding: 15px 10px;
@@ -743,9 +744,8 @@ header #microphone, header #batery, header #horario {
   }
 }
 
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
+.gamepass {
+  margin-bottom: 7rem;
 }
 .gamepass .card-gamepass {
   background-image: url(../img/gamepass/bg.jpg);
@@ -760,8 +760,16 @@ header #microphone, header #batery, header #horario {
     background-position: center;
   }
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .gamepass .card-gamepass {
+    background-position: center -45px;
+  }
+}
 .gamepass .card-gamepass i {
   font-size: 74px;
+}
+.gamepass .card-gamepass p {
+  font-size: 1rem;
 }
 .gamepass .banner1 {
   height: 122%;
@@ -777,6 +785,7 @@ header #microphone, header #batery, header #horario {
 }
 .gamepass .banner1 p {
   z-index: 1;
+  font-size: 1rem;
 }
 .gamepass .banner2 {
   height: 60%;
@@ -800,6 +809,7 @@ header #microphone, header #batery, header #horario {
 }
 .gamepass .banner2 p {
   z-index: 1;
+  font-size: 1rem;
 }
 .gamepass .banner3 {
   height: 60%;
@@ -823,18 +833,17 @@ header #microphone, header #batery, header #horario {
   height: 100%;
   background-image: url(../img/gamepass/banner4.jpg);
   background-repeat: no-repeat;
-  background-size: 101%;
-  background-position: center -2px;
+  background-size: cover;
+  background-position: center top;
 }
 @media (max-width: 767.98px) {
   .gamepass .banner4 {
     height: 200px;
-    background-size: cover;
-    background-position: center;
   }
 }
 .gamepass .banner4 p {
   z-index: 1;
+  font-size: 1rem;
 }
 .gamepass .banner5 {
   height: 100%;
@@ -858,6 +867,7 @@ header #microphone, header #batery, header #horario {
 }
 .gamepass .banner5 p {
   z-index: 1;
+  font-size: 1rem;
 }
 .gamepass .card .sub-card p {
   padding: 15px 10px;
@@ -874,10 +884,6 @@ header #microphone, header #batery, header #horario {
   padding: 0 2px 0 0;
 }
 
-@font-face {
-  font-family: "RobotoCondensed";
-  src: url("../../../src/font/RobotoCondensed/RobotoCondensed-Regular.ttf");
-}
 footer {
   background-color: #111111;
   bottom: 0;
@@ -890,6 +896,9 @@ footer a:link, footer :visited, footer :hover, footer :active {
 footer a:link i, footer :visited i, footer :hover i, footer :active i {
   color: #7e7e7e;
   font-size: 18px;
+}
+footer #versao {
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
