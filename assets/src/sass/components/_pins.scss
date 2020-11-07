@@ -2,6 +2,10 @@
 
 .pins{
 
+    margin-bottom: 7rem;
+
+    & p{font-size: 1rem;}
+    
     & .card{
         font-size: 1.1em;
         border: 0;
@@ -37,7 +41,7 @@
 
     & .sub-card{
 
-        height: 99px;
+        height: 101px;
 
         & i{
             font-size: 50px;
@@ -320,4 +324,9 @@
 
     }
 
+    & .col-lg-3{
+        @media(min-width: $grid-min-md){
+            padding-right: 15px !important;
+        }
+    }
 }

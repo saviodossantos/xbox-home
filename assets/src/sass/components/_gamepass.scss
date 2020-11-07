@@ -2,6 +2,8 @@
 
 .gamepass{
 
+    margin-bottom: 7rem;
+
     & .card-gamepass{
         background-image: url(../img/gamepass/bg.jpg);
         background-repeat: no-repeat;
@@ -9,20 +11,21 @@
         background-position: center -70px;
         height: 210px;
 
-        // @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
-        //     background-size: 150%;
-        //     background-position: center;
-        // }
-
         @media(max-width: $grid-max-md){
             background-size: cover;
             background-position: center;
+        }
+
+        @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg){
+            background-position: center -45px;
         }
 
         
         & i{
             font-size: 74px;
         }
+
+        & p{font-size: 1rem;}
     }
 
     & .banner1{ //world war z
@@ -39,7 +42,7 @@
 
         & p{
             z-index: 1;
-            
+            font-size: 1rem;
         }
     }
 
@@ -63,7 +66,7 @@
 
         & p{
             z-index: 1;
-            
+            font-size: 1rem;
         }
     }
 
@@ -91,20 +94,18 @@
         height: 100%;
         background-image: url(../img/gamepass/banner4.jpg);
         background-repeat: no-repeat;
-        background-size: 101%;
-        background-position: center -2px;
+        background-size: cover;
+        background-position: center top;
         
 
         @media(max-width:$grid-max-sm){            
             height: 200px;
-            background-size: cover;
-            background-position: center ;
 
         }
 
         & p{
             z-index: 1;
-
+            font-size: 1rem;
         }
     }
 
@@ -129,7 +130,7 @@
 
         & p{
             z-index: 1;
-            
+            font-size: 1rem;
         }
     }
 

@@ -1,5 +1,4 @@
 //horário do sistema
-
 function time(){
 
     let horario = new Date();
@@ -17,5 +16,11 @@ function time(){
 }
 
 function menu(){
-    alert("🚨 Você descobriu um recurso que (ainda) não está disponível!\n" + "Parabéns! 🥳🥳\n\n" + "➡ Em breve, ao clicar aqui, será capaz personalizar o conteúdo da home, como opacidade e cor dos blocos, sendo o mais fiel possível ao sistema.")
+    alert("🚨 Você descobriu um recurso que (ainda) não está disponível!\n"
+     + "Parabéns! 🥳🥳\n\n"
+     + "Em breve:\n\n"
+     + "➡ Seção configurações para personalizar opacidade e cor dos blocos;\n"
+     + "➡ Seção Pessoas;\n"
+     + "➡ Seção Perfil & Sistema;\n"
+     + "➡ Visualizar data e hora.")
 }
