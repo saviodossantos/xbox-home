@@ -222,13 +222,13 @@ header #microphone, header #batery, header #horario {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .recentes .box3 {
     background-position: center;
-    background-size: 195%;
+    background-size: 202%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .recentes .box3 {
     background-position: center;
-    background-size: 145%;
+    background-size: 150%;
   }
 }
 .recentes .box4 {
@@ -272,12 +272,13 @@ header #microphone, header #batery, header #horario {
   font-size: 64px;
   color: #FFFFFF;
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .recentes .biblioteca p, .recentes .anuncio1 p, .recentes .anuncio2 p, .recentes .atividade-recente p {
-    font-size: 13px;
+@media (max-width: 767.98px) {
+  .recentes .atividade-recente.pr-2px {
+    padding-right: 15px !important;
   }
 }
-.recentes .atividade-recente {
+.recentes .atividade-recente .card {
+  height: 120px;
   background-image: url(../img/home/anuncio1.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -298,16 +299,39 @@ header #microphone, header #batery, header #horario {
 .recentes .atividade-recente p {
   z-index: 1;
 }
+@media (max-width: 767.98px) {
+  .recentes .anuncio.pr-2px {
+    padding-right: 15px !important;
+  }
+}
 .recentes .anuncio .card {
   height: 120px;
   background-image: url(../img/home/anuncio2.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position-y: -12px;
+  background-position: center;
+}
+@media (min-width: 360px) and (max-width: 575.98px) {
+  .recentes .anuncio .card {
+    background-size: cover;
+    background-position: center -60px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .recentes .anuncio .card {
+    background-size: cover;
+    background-position: center 70%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .recentes .anuncio .card {
-    background-position-y: 0;
+    background-size: 131%;
+    background-position: center -51px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .recentes .anuncio .card {
+    background-position-y: -53px;
   }
 }
 @media (min-width: 1200px) {
@@ -315,8 +339,18 @@ header #microphone, header #batery, header #horario {
     background-position-y: -61px;
   }
 }
+.recentes .anuncio .card p {
+  color: #FFFFFF;
+  z-index: 1;
+}
 .recentes .anuncio p {
   color: #7e7e7e;
+}
+.recentes .pl-2px {
+  padding-left: 2px !important;
+}
+.recentes .pr-2px {
+  padding-right: 2px !important;
 }
 
 .pins {
@@ -423,13 +457,13 @@ header #microphone, header #batery, header #horario {
 }
 @media (max-width: 359.98px) {
   .pins .pin3 {
-    background-size: 105px;
-    background-position: center -25px;
+    background-size: 84px;
+    background-position: center -15px;
   }
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
   .pins .pin3 {
-    background-size: 120px;
+    background-size: 100px;
     background-position: center -18px;
   }
 }
@@ -488,13 +522,14 @@ header #microphone, header #batery, header #horario {
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
   .pins .pin5 {
-    background-size: 100px;
+    background-size: cover;
     background-position: center -17px;
+    background-repeat: no-repeat;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .pins .pin5 {
-    background-position: center -30px;
+    background-position: center -40px;
   }
 }
 .pins .pin6 {
@@ -504,14 +539,14 @@ header #microphone, header #batery, header #horario {
 }
 @media (max-width: 359.98px) {
   .pins .pin6 {
-    background-size: 115px;
-    background-position: center -20px;
+    background-size: 90px;
+    background-position: center -7px;
   }
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
   .pins .pin6 {
-    background-size: 135px;
-    background-position: center -35px;
+    background-size: 110px;
+    background-position: center -20px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -552,9 +587,6 @@ header #microphone, header #batery, header #horario {
     background-size: 120px;
     background-position: center -33px;
   }
-  .pins .pin8 p {
-    font-size: 12px;
-  }
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
   .pins .pin8 {
@@ -564,8 +596,8 @@ header #microphone, header #batery, header #horario {
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .pins .pin8 {
-    background-size: 125px;
-    background-position: center -26px;
+    background-size: 150px;
+    background-position: center -40px;
   }
 }
 .pins .edge {
