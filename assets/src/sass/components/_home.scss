@@ -103,12 +103,12 @@
 
         @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
             background-position: center;
-            background-size: 195%;
+            background-size: 202%;
         }
 
         @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
             background-position: center;
-            background-size: 145%;
+            background-size: 150%;
         }
     }
 
@@ -152,18 +152,23 @@
             color: $white;
         }
 
-        & p{
-            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
-                font-size: 13px;
-            }
-        }
     }
 
     & .atividade-recente { //fifa 21
-        background-image: url(../img/home/anuncio1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: top;
+
+        &.pr-2px{
+            @media(max-width:$grid-max-sm) {
+                padding-right: 15px !important;
+            }
+        }
+
+        & .card{
+            height: 120px;
+            background-image: url(../img/home/anuncio1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: top;
+        }
 
         & img {
             width: 40px;
@@ -184,23 +189,55 @@
 
     & .anuncio { //black ops cold war
 
+        &.pr-2px{
+            @media(max-width:$grid-max-sm) {
+                padding-right: 15px !important;
+            }
+        }
+        
         & .card {
             height: 120px;
             background-image: url(../img/home/anuncio2.png);
             background-repeat: no-repeat;
             background-size: 100%;
-            background-position-y: -12px;
+            background-position: center ;
+
+            @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+                background-size: cover;
+                background-position: center -60px;
+            }
+            
+            @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+                background-size: cover;
+                background-position: center 70%;
+            }
 
             @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
-                background-position-y: 0;
+                background-size: 131%;
+                background-position: center -51px;
+            }
+
+            @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
+                background-position-y: -53px;
             }
 
             @media(min-width: $grid-min-xl) {
                 background-position-y: -61px;
             }
+
+            & p{color: $white; z-index: 1;}
+            
         }
 
         & p{color: $anuncio;}
+    }
+
+    & .pl-2px {
+        padding-left: 2px !important;
+    }
+
+    & .pr-2px {
+        padding-right: 2px !important;
     }
 
 }
