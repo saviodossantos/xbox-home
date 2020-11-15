@@ -47,7 +47,7 @@
     <section class="container recentes">
 
         <div class="row">
-            <div class="col-12 col-md-4 pr-md-3">
+            <div class="col-12 col-md-3 pr-md-3">
 
                 <a href="https://www.microsoft.com/pt-br/p/ori-and-the-will-of-the-wisps/9n8cd0xzklp4" target="_blank">
                     <div class="card card-principal">
@@ -58,7 +58,7 @@
                 </a>
             </div>
 
-            <div class="col-6 col-md-2 pr-2px align-self-md-end">
+            <div class="col-6 col-md-1 pr-2px align-self-md-end ">
                 <a href="https://www.xbox.com/pt-BR/" target="_blank">
                     <div class="card card-secundario">
 
@@ -72,7 +72,7 @@
                 </a>
             </div>
 
-            <div class="col-6 col-md-2 pl-2px align-self-md-end">
+            <div class="col-6 col-md-1 pl-2px align-self-md-end">
                 <div class="card card-secundario box3">
 
                     <p class="mt-auto descricao">Cyberpunk 2077</p>
@@ -80,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="col-6 col-md-2 pr-2px align-self-md-end">
+            <div class="col-6 col-md-1 pr-2px align-self-md-end ">
                 <a href="https://www.xbox.com/pt-BR/xbox-game-pass" target="_blank">
                     <div class="card card-secundario box4">
 
@@ -90,7 +90,7 @@
                 </a>
             </div>
 
-            <div class="col-6 col-md-2 pl-2px align-self-md-end">
+            <div class="col-6 col-md-1 pl-2px align-self-md-end ">
                 <a href="https://www.microsoft.com/pt-br/edge" target="_blank">
                     <div class="card card-secundario edge">
 
@@ -104,11 +104,32 @@
                 </a>
             </div>
 
+            <div class="col-6 col-md-1 pr-2px align-self-md-end mt-md-0 mt-2">
+                <a href="https://www.microsoft.com/pt-br/p/no-mans-sky/bqvqtl3pch05" target="_blank">
+                    <div class="card card-secundario box6">
+
+
+                        <p class="mt-auto descricao">No Man's Sky</p>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-md-1 pl-2px align-self-md-end mt-md-0 mt-2">
+                <a href="https://www.microsoft.com/pt-br/p/resident-evil-7-biohazard/9nblggh4spk6" target="_blank">
+                    <div class="card card-secundario box7">
+
+                        <p class="mt-auto descricao">RESIDENT EVIL 7 biohazard</p>
+
+                    </div>
+                </a>
+            </div>
+
         </div>
 
         <div class="row mt-md-4 mt-3">
 
-            <div class="col-12 col-md-4 pr-md-3 mb-2">
+            <div class="col-12 col-md-3 pr-md-3 mb-2">
                 <div class="card biblioteca">
 
                     <div class="text-center mt-3">
@@ -120,7 +141,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-4 mb-2 atividade-recente pr-2px">
+            <div class="col-12 col-md-3 mb-2 atividade-recente pr-2px">
                 <div class="card ">
 
                     <div class="mt-2 mr-3 ml-auto">
@@ -128,9 +149,9 @@
                         <img src="assets/dist/img/home/perfil-amigo2.jpg" alt="Imagem de perfil amigo">
                     </div>
 
-                    <p class="mt-auto ml-3">
-                        2 amigos
-                        <span class="d-block">jogando EA SPORTS™ FIFA 21</span>
+                    <p class="mt-auto ml-3 ml-md-2">
+                        2 amigos jogando
+                        <span class="d-block">EA SPORTS™ FIFA 21</span>
                     </p>
                     <div class="fundo-escuro"></div>
 
@@ -138,16 +159,37 @@
 
             </div>
 
-            <div class="col-12 col-md-4 anuncio pr-2px">
-                <div class="card">
+            <div class="col-12 col-md-3 mb-2 with-gold pr-2px">
+                <div class="card ">
 
-                    <p class="mt-auto ml-3">
-                        COD: Black Ops Cold War
-                        <span class="d-block">Pré-encomenda disponível</span>
+                    <div class="mt-1 ml-auto mr-3">
+                        <img src="assets/dist/img/home/live-gold.png" alt="Imagem de perfil amigo">
+                    </div>
+
+                    <p class="mt-auto ml-3 ml-md-2">
+                        Dias para jogar de graça
                     </p>
                     <div class="fundo-escuro"></div>
 
                 </div>
+
+            </div>
+
+            <div class="col-12 col-md-3 anuncio pr-2px">
+
+                <a href="https://www.xbox.com/pt-BR/games/call-of-duty-black-ops-cold-war" target="_blank" rel="noopener noreferrer">
+                    <div class="card">
+
+                        <p class="mt-auto ml-3 ml-md-2">
+                            <span class="d-block">Já disponível</span>
+                            COD: Black Ops Cold War
+
+                        </p>
+                        <div class="fundo-escuro"></div>
+
+                    </div>
+                </a>
+
                 <div class="float-right">
                     <p>
                         <small>Anúncio</small>
@@ -165,7 +207,7 @@
 
             <h2 class="title font-weight-bold col-12">Pins</h2>
 
-            <div class="col-6 col-md-4 col-lg-3 pr-2px">
+            <div class="col-6 col-md-3 col-lg-3 pr-2px">
 
                 <div class="card groups">
 
@@ -175,7 +217,7 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 pl-2px pr-2px">
+            <div class="col-3 col-md-1 col-lg-1 pl-2px pr-2px">
 
                 <a href="https://www.microsoft.com/pt-br/p/cuphead/9njrx71m5x9p" target="_blank">
 
@@ -200,7 +242,7 @@
                 </a>
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 pl-2px ">
+            <div class="col-3 col-md-1 col-lg-1 pl-2px pr-2px d-none d-md-block">
                 <a href="https://www.spotify.com/br/" target="_blank">
 
                     <div class="card pin2">
@@ -226,7 +268,33 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-md-0 pr-2px">
+            <div class="col-3 col-md-1 col-lg-1 pl-2px d-block d-md-none">
+                <a href="https://www.spotify.com/br/" target="_blank">
+
+                    <div class="card pin2">
+                        <div class="sub-card">
+                            <p class="mt-auto descricao">Spotify</p>
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <div class="card mt-2">
+                    <div class="sub-card">
+
+                        <div class="text-center mt-3">
+                            <i class="fas fa-grip-lines"></i>
+                        </div>
+
+                        <p class="mt-auto descricao">One Guide</p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-3 col-md-1 col-lg-1 mt-2 mt-md-0 pr-2px">
                 <a href="https://www.primevideo.com/?_encoding=UTF8&language=pt_BR" target="_blank">
 
                     <div class="card pin3">
@@ -251,7 +319,7 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-md-0 pl-2px pr-2px">
+            <div class="col-3 col-md-1 col-lg-1 mt-2 mt-md-0 pl-2px pr-2px">
 
                 <a href="https://www.netflix.com/br/" target="_blank">
 
@@ -281,7 +349,7 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-lg-0 pl-2px pr-2px">
+            <div class="col-3 col-md-1 col-lg-1 mt-2 mt-md-0 pl-2px pr-2px">
 
                 <a href="https://www.youtube.com/" target="_blank">
 
@@ -293,7 +361,7 @@
                     </div>
                 </a>
 
-                <a href="https://www.microsoft.com/pt-br/edge" target="_blank" class="d-md-none d-lg-block">
+                <a href="https://www.microsoft.com/pt-br/edge" target="_blank">
 
                     <div class="card edge mt-2">
                         <div class="sub-card">
@@ -311,7 +379,7 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-lg-0 pl-2px d-inline">
+            <div class="col-3 col-md-1 col-lg-1 mt-2 mt-md-0 pr-2px d-none d-md-block">
 
                 <a href="https://www.ea.com/pt-br/ea-play" target="_blank">
 
@@ -324,8 +392,7 @@
 
                 </a>
 
-                <a href="https://www.microsoft.com/pt-br/p/quantum-break/9nblggh6h0rv" target="_blank"
-                    class="d-md-none d-lg-block">
+                <a href="https://www.microsoft.com/pt-br/p/quantum-break/9nblggh6h0rv" target="_blank">
 
                     <div class="card pin10 mt-2">
 
@@ -339,7 +406,37 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-lg-0 pr-2px">
+            <div class="col-3 col-md-1 col-lg-1 mt-2 mt-md-0 pl-2px d-block d-md-none">
+
+                <a href="https://www.ea.com/pt-br/ea-play" target="_blank">
+
+                    <div class="card pin6">
+                        <div class="sub-card">
+                            <p class="mt-auto descricao">EA Play</p>
+                        </div>
+
+                    </div>
+
+                </a>
+
+                <a href="https://www.microsoft.com/pt-br/p/quantum-break/9nblggh6h0rv" target="_blank">
+
+                    <div class="card pin10 mt-2">
+
+                        <div class="sub-card">
+                            <p class="mt-auto descricao">Quantum Break</p>
+                        </div>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-md-1 col-lg-1 mt-2 pr-2px d-none d-md-block"></div>
+            <div class="col-md-1 col-lg-1 mt-2 pr-2px d-none d-md-block"></div>
+
+            <div class="col-3 col-md-1 col-lg-1 mt-2 pr-2px">
 
                 <a href="https://www.telecineplay.com.br/" target="_blank">
 
@@ -354,7 +451,7 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-lg-0 pl-2px pr-2px">
+            <div class="col-3 col-md-1 col-lg-1 mt-2 pl-2px pr-2px">
 
                 <a href="https://www.facebook.com/watch/" target="_blank">
 
@@ -369,7 +466,7 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-lg-0 pl-2px pr-2px">
+            <div class="col-3 col-md-1 col-lg-1 mt-2  pl-2px pr-2px">
 
                 <div class="card">
                     <div class="sub-card">
@@ -386,7 +483,7 @@
 
             </div>
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-lg-0 pl-2px pr-2px d-none d-md-block d-lg-none">
+            <!-- <div class="col-3 col-md-1 col-lg-1 mt-2 mt-lg-0 pl-2px pr-2px d-none d-md-block d-lg-none">
 
                 <a href="https://www.microsoft.com/pt-br/edge" target="_blank">
 
@@ -407,7 +504,7 @@
             </div>
 
 
-            <div class="col-3 col-md-2 col-lg-1 mt-2 mt-lg-0 pr-2px d-none d-md-block d-lg-none">
+            <div class="col-3 col-md-1 col-lg-1 mt-2 mt-lg-0 pr-2px d-none d-md-block d-lg-none">
 
                 <a href="https://www.microsoft.com/pt-br/p/quantum-break/9nblggh6h0rv" target="_blank">
 
@@ -422,7 +519,7 @@
                 </a>
 
 
-            </div>
+            </div> -->
 
 
         </div>
@@ -537,7 +634,7 @@
 
             <div class="col-md-3"></div>
 
-            <div class="col-6 col-md-3 pr-2px text-center text-md-left">
+            <div class="col-6 col-md-3 pr-2px text-md-left">
 
                 <div class="card mt-1">
                     <div class="sub-card">
@@ -574,7 +671,7 @@
 
             </div>
 
-            <div class="col-6 col-md-3 pl-2px text-center text-md-left">
+            <div class="col-6 col-md-3 pl-2px">
 
                 <div class="card mt-1">
                     <div class="sub-card">
@@ -771,14 +868,14 @@
 
             <div class="col-md-3"></div>
 
-            <div class="col-md-3 pr-2px text-center text-md-left d-md-block d-none">
+            <div class="col-md-3 pr-2px d-md-block d-none">
 
                 <div class="card mt-1">
                     <div class="sub-card">
 
                         <p>
                             <i class="far fa-clock pr-1"></i>
-                            Adicionados recentemente
+                            Recém-adicionados
                         </p>
 
                     </div>
@@ -846,11 +943,11 @@
             <div class="col-6 pr-2px d-block d-md-none">
 
                 <div class="card mt-1">
-                    <div class="sub-card text-center">
+                    <div class="sub-card ">
 
                         <p>
                             <i class="far fa-clock"></i>
-                            Adicionados recentemente
+                            Recém-adicionados
                         </p>
 
                     </div>
@@ -860,7 +957,7 @@
             <div class="col-6 pl-2px d-block d-md-none">
 
                 <div class="card mt-1">
-                    <div class="sub-card text-center">
+                    <div class="sub-card ">
 
                         <p>
                             <i class="fas fa-gamepad"></i>
@@ -889,15 +986,15 @@
                     <p>Todo conteúdo aqui terceirizado é licenciado através de creative commons e totalmente sem fins
                         lucrativos.</p>
 
-                    <p id="versao">*baseado na OS Version 10.0.19041.3503 (August, 2020)</p>
+                    <p id="base">*baseado na OS Version 10.0.19041.3503 (August, 2020)</p>
 
 
 
-                    <p class="d-flex">
+                    <p class="d-flex pt-4">
 
                         11/2020
 
-                        <span class="ml-auto">v0.5.2</span>
+                        <span class="ml-auto">v0.5.3</span>
 
                         <span class="ml-auto">
 

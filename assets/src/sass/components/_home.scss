@@ -4,31 +4,19 @@
     margin-top: 120px;
     color: $black;
     margin-bottom: 7rem;
+
+    @media(max-width: $grid-max-sm){
+        margin-bottom: 5rem;
+    }
+
     & p{font-size: 1rem;}
 
     & .card-principal { //maior box, ori
         height: 287px;
         background-image: url(../img/home/box1.png);
         background-repeat: no-repeat;
-        background-size: 170%;
-        background-position: center;
-
-        @media(max-width: $grid-max-xxs){
-            background-size: cover;
-        }
-
-        @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
-            background-size: cover;
-        }
-
-        @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
-            background-size: 230%;
-        }
-
-        @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
-
-            background-size: 169%;
-        }
+        background-size: cover;
+        background-position: 45% center ;
 
         & p {
             @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
@@ -79,7 +67,7 @@
     & .descricao{
         background-color: $fundo-descricao;
         margin: 0;
-        padding: 5px 0 5px 10px;
+        padding: 5px 10px 5px 10px;
         opacity: 0;
         transition: opacity .5s;
 
@@ -96,18 +84,28 @@
     }
 
     & .box3 { //cyberpunk
-        background-image: url(../img/home/box3.jpg);
+        background-image: url(../img/home/box3-md.jpg);
         background-repeat: no-repeat;
-        background-size: 125%;
-        background-position: top;
+        background-size: 115%;
+        background-position: center 73%;
+
+        @media(max-width: $grid-max-sm){
+            background-size: 120%;
+            background-position: top;
+        }
+
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            background-size: 120%;
+            background-position: center -16px;
+        }
 
         @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
-            background-position: center;
-            background-size: 202%;
+            background-position: center -42px;
+            background-size: 172%;
         }
 
         @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
-            background-position: center;
+            background-position: center -52px;
             background-size: 150%;
         }
     }
@@ -116,7 +114,7 @@
         background-image: url(../img/home/box4.jpg);
         background-repeat: no-repeat;
         background-size: 133%;
-        background-position: center -45px;
+        background-position: center;
         margin: 0;
 
         @media (min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
@@ -132,10 +130,69 @@
         @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
             background-position: center;
             background-size: 160%;
+            background-repeat: repeat;
         }
 
-        @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
-            background-position: center -30px;
+    }
+
+    & .box6 { //no man's sky
+        background-image: url(../img/home/box6.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+
+        @media (min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
+            background-image: url(../img/home/box6-sm.jpg);
+            background-position: center top;
+            background-size: 190%;
+        }
+
+        @media (min-width: $grid-min-sm) and (max-width: $grid-max-sm) {
+            background-image: url(../img/home/box6-sm.jpg);
+            background-position: center top;
+            background-size: 170%;
+        }
+
+        @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
+            background-position: 52% center;
+        }
+
+        @media(min-width: $grid-min-lg){
+            background-position: center;
+        }
+    }
+
+    & .box7 { //resident evil 7
+        background-image: url(../img/home/box7.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center -45px;
+        margin: 0;
+
+        @media (max-width: $grid-max-xxs) {
+            background-image: url(../img/home/box7-sm.jpg);
+            background-position: center top;
+            background-size: 100%;
+        }
+
+        @media (min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
+            background-position: center 78%;
+            background-size: 100%;
+        }
+
+        @media (min-width: $grid-min-sm) and (max-width: $grid-max-sm) {
+            background-image: url(../img/home/box7-sm.jpg);
+            background-position: center;
+        }
+
+        @media (min-width: $grid-min-md) and (max-width: $grid-max-md) {
+            background-position: center;
+
+        }
+
+        @media(min-width: $grid-min-lg) {
+            background-position: center -10px;
         }
     }
 
@@ -166,7 +223,7 @@
             height: 120px;
             background-image: url(../img/home/anuncio1.jpg);
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
             background-position: top;
         }
 
@@ -179,6 +236,50 @@
             @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
                 width: 30px;
                 height: 30px;
+            }
+        }
+
+        & p {
+            z-index: 1;
+        }
+    }
+
+    & .with-gold { //injustice 2
+
+        &.pr-2px{
+            @media(max-width:$grid-max-sm) {
+                padding-right: 15px !important;
+            }
+        }
+
+        & .card{
+            height: 120px;
+            background-image: url(../img/home/anuncio3.jpg);
+            background-repeat: no-repeat;
+            background-size: 170%;
+            background-position: 85% -22px;
+
+            @media(max-width: $grid-max-sm){
+                background-size: 150%;
+                background-position: center -40px;
+            }            
+
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                background-size: 215%;
+                background-position: center -12px;
+            }
+        }
+
+        & img {
+            width: 17%;
+            float: right;
+
+            @media(max-width: $grid-max-sm){
+                width: 15%;
+            }
+
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+                width: 20%;
             }
         }
 
@@ -214,16 +315,8 @@
 
             @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 background-size: 131%;
-                background-position: center -51px;
             }
 
-            @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg) {
-                background-position-y: -53px;
-            }
-
-            @media(min-width: $grid-min-xl) {
-                background-position-y: -61px;
-            }
 
             & p{color: $white; z-index: 1;}
             
@@ -232,12 +325,20 @@
         & p{color: $anuncio;}
     }
 
-    & .pl-2px {
-        padding-left: 2px !important;
+    & .pr-2px{
+        padding: 0 0 0 2px;
+
+        @media(max-width:$grid-max-sm) {
+            padding-left: 15px !important;
+        }
     }
 
-    & .pr-2px {
-        padding-right: 2px !important;
+    & .pl-2px{
+        padding: 0 2px 0 0;
+
+        @media(max-width:$grid-max-sm) {
+            padding-right: 15px !important;
+        }
     }
 
 }
