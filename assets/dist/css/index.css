@@ -81,17 +81,23 @@ body .fundo-escuro-bg {
     padding: 0 15px 0 15px !important;
   }
 }
+body .container {
+  padding: 0 15px 0 15px !important;
+}
 body .pl-2px {
   padding-left: 2px !important;
 }
 body .pr-2px {
   padding-right: 2px !important;
 }
-body .col-md-2, body .col-md-3, body .col-md-6 {
+body .col-md-1, body .col-md-2, body .col-md-3, body .col-md-6 {
   padding: 0 2px;
 }
+body .col-md-1 {
+  min-width: 12.5%;
+}
 @media (min-width: 768px) {
-  body .col-md-3, body .col-md-4 {
+  body .col-md-1, body .col-md-3, body .col-md-4 {
     padding: 0 15px 0 2px;
   }
 }
@@ -124,6 +130,11 @@ header #microphone, header #batery, header #horario {
   color: #000000;
   margin-bottom: 7rem;
 }
+@media (max-width: 767.98px) {
+  .recentes {
+    margin-bottom: 5rem;
+  }
+}
 .recentes p {
   font-size: 1rem;
 }
@@ -131,28 +142,8 @@ header #microphone, header #batery, header #horario {
   height: 287px;
   background-image: url(../img/home/box1.png);
   background-repeat: no-repeat;
-  background-size: 170%;
-  background-position: center;
-}
-@media (max-width: 359.98px) {
-  .recentes .card-principal {
-    background-size: cover;
-  }
-}
-@media (min-width: 360px) and (max-width: 767.98px) {
-  .recentes .card-principal {
-    background-size: cover;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .recentes .card-principal {
-    background-size: 230%;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .recentes .card-principal {
-    background-size: 169%;
-  }
+  background-size: cover;
+  background-position: 45% center;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .recentes .card-principal p {
@@ -200,7 +191,7 @@ header #microphone, header #batery, header #horario {
 .recentes .descricao {
   background-color: #3f3f3f;
   margin: 0;
-  padding: 5px 0 5px 10px;
+  padding: 5px 10px 5px 10px;
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -214,20 +205,32 @@ header #microphone, header #batery, header #horario {
   opacity: 1;
 }
 .recentes .box3 {
-  background-image: url(../img/home/box3.jpg);
+  background-image: url(../img/home/box3-md.jpg);
   background-repeat: no-repeat;
-  background-size: 125%;
-  background-position: top;
+  background-size: 115%;
+  background-position: center 73%;
+}
+@media (max-width: 767.98px) {
+  .recentes .box3 {
+    background-size: 120%;
+    background-position: top;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .recentes .box3 {
+    background-size: 120%;
+    background-position: center -16px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .recentes .box3 {
-    background-position: center;
-    background-size: 202%;
+    background-position: center -42px;
+    background-size: 172%;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .recentes .box3 {
-    background-position: center;
+    background-position: center -52px;
     background-size: 150%;
   }
 }
@@ -235,7 +238,7 @@ header #microphone, header #batery, header #horario {
   background-image: url(../img/home/box4.jpg);
   background-repeat: no-repeat;
   background-size: 133%;
-  background-position: center -45px;
+  background-position: center;
   margin: 0;
 }
 @media (min-width: 360px) and (max-width: 575.98px) {
@@ -254,11 +257,74 @@ header #microphone, header #batery, header #horario {
   .recentes .box4 {
     background-position: center;
     background-size: 160%;
+    background-repeat: repeat;
   }
 }
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .recentes .box4 {
-    background-position: center -30px;
+.recentes .box6 {
+  background-image: url(../img/home/box6.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+@media (min-width: 360px) and (max-width: 575.98px) {
+  .recentes .box6 {
+    background-image: url(../img/home/box6-sm.jpg);
+    background-position: center top;
+    background-size: 190%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .recentes .box6 {
+    background-image: url(../img/home/box6-sm.jpg);
+    background-position: center top;
+    background-size: 170%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .recentes .box6 {
+    background-position: 52% center;
+  }
+}
+@media (min-width: 992px) {
+  .recentes .box6 {
+    background-position: center;
+  }
+}
+.recentes .box7 {
+  background-image: url(../img/home/box7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -45px;
+  margin: 0;
+}
+@media (max-width: 359.98px) {
+  .recentes .box7 {
+    background-image: url(../img/home/box7-sm.jpg);
+    background-position: center top;
+    background-size: 100%;
+  }
+}
+@media (min-width: 360px) and (max-width: 575.98px) {
+  .recentes .box7 {
+    background-position: center 78%;
+    background-size: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .recentes .box7 {
+    background-image: url(../img/home/box7-sm.jpg);
+    background-position: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .recentes .box7 {
+    background-position: center;
+  }
+}
+@media (min-width: 992px) {
+  .recentes .box7 {
+    background-position: center -10px;
   }
 }
 .recentes .edge {
@@ -281,7 +347,7 @@ header #microphone, header #batery, header #horario {
   height: 120px;
   background-image: url(../img/home/anuncio1.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: top;
 }
 .recentes .atividade-recente img {
@@ -297,6 +363,47 @@ header #microphone, header #batery, header #horario {
   }
 }
 .recentes .atividade-recente p {
+  z-index: 1;
+}
+@media (max-width: 767.98px) {
+  .recentes .with-gold.pr-2px {
+    padding-right: 15px !important;
+  }
+}
+.recentes .with-gold .card {
+  height: 120px;
+  background-image: url(../img/home/anuncio3.jpg);
+  background-repeat: no-repeat;
+  background-size: 170%;
+  background-position: 85% -22px;
+}
+@media (max-width: 767.98px) {
+  .recentes .with-gold .card {
+    background-size: 150%;
+    background-position: center -40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .recentes .with-gold .card {
+    background-size: 215%;
+    background-position: center -12px;
+  }
+}
+.recentes .with-gold img {
+  width: 17%;
+  float: right;
+}
+@media (max-width: 767.98px) {
+  .recentes .with-gold img {
+    width: 15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .recentes .with-gold img {
+    width: 20%;
+  }
+}
+.recentes .with-gold p {
   z-index: 1;
 }
 @media (max-width: 767.98px) {
@@ -326,17 +433,6 @@ header #microphone, header #batery, header #horario {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .recentes .anuncio .card {
     background-size: 131%;
-    background-position: center -51px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .recentes .anuncio .card {
-    background-position-y: -53px;
-  }
-}
-@media (min-width: 1200px) {
-  .recentes .anuncio .card {
-    background-position-y: -61px;
   }
 }
 .recentes .anuncio .card p {
@@ -346,11 +442,21 @@ header #microphone, header #batery, header #horario {
 .recentes .anuncio p {
   color: #7e7e7e;
 }
-.recentes .pl-2px {
-  padding-left: 2px !important;
-}
 .recentes .pr-2px {
-  padding-right: 2px !important;
+  padding: 0 0 0 2px;
+}
+@media (max-width: 767.98px) {
+  .recentes .pr-2px {
+    padding-left: 15px !important;
+  }
+}
+.recentes .pl-2px {
+  padding: 0 2px 0 0;
+}
+@media (max-width: 767.98px) {
+  .recentes .pl-2px {
+    padding-right: 15px !important;
+  }
 }
 
 .pins {
@@ -757,7 +863,12 @@ header #microphone, header #batery, header #horario {
   font-size: 15px;
 }
 .store .card .sub-card p i {
-  font-size: 18px;
+  font-size: 20px;
+  width: 25px;
+  height: 2rem;
+  float: left;
+  text-align: center;
+  margin-right: 7px;
 }
 .store .pr-2px {
   padding: 0 0 0 2px;
@@ -907,7 +1018,12 @@ header #microphone, header #batery, header #horario {
   font-size: 15px;
 }
 .gamepass .card .sub-card p i {
-  font-size: 18px;
+  font-size: 20px;
+  width: 25px;
+  height: 2rem;
+  float: left;
+  text-align: center;
+  margin-right: 7px;
 }
 .gamepass .pr-2px {
   padding: 0 0 0 2px;
@@ -929,7 +1045,7 @@ footer a:link i, footer :visited i, footer :hover i, footer :active i {
   color: #7e7e7e;
   font-size: 18px;
 }
-footer #versao {
+footer #base {
   font-size: 10px;
 }
 
