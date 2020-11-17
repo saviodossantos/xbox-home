@@ -25,7 +25,7 @@
                 <div class="gamertag">
                     <span class="justify-content-center font-weight-bold">SnowRJ</span><br>
                     <i class="fas fa-trophy text-bottom"></i>
-                    <span class="justify-content-center text-bottom">43992</span>
+                    <span class="justify-content-center text-bottom">44027</span>
                 </div>
 
 
@@ -979,14 +979,16 @@
             <div class="row">
                 <div class="col-12">
 
-                    <p>Toda marca presente é uma propriedade pertencente à terceiros.</p>
+                    <p>Toda marca presente é uma propriedade pertencente à terceiros.*</p>
 
                     <p>Todas as marcas presentes foram usadas somente em caráter expositivo.</p>
 
                     <p>Todo conteúdo aqui terceirizado é licenciado através de creative commons e totalmente sem fins
                         lucrativos.</p>
+                    
+                    <p>*As marcas Xbox, Ori and the Will of the Wisps, Cyberpunk 2077, Xbox Game Pass, No Man's Sky, Resident Evil, FIFA, Injustice, Call of Duty, Cuphead, Spotify, Prime Video, Netflix, Youtube, EA Play, State of Decay, Twitch, EDGE, Quantum Break, Telecine Play, Facebook Watch, Fortnite, Watch Dogs, Alien Isolation, World War Z, Hellblade, Astroneer, Rainbow Six, A Plague Tale: Innocence e outras são propriedades intelectuais que pertencem à terceiros.</p>
 
-                    <p id="base">*baseado na OS Version 10.0.19041.3503 (August, 2020)</p>
+                    <p id="base">**baseado na OS Version 10.0.19041.3503 (Agosto, 2020)</p>
 
 
 
@@ -994,7 +996,7 @@
 
                         11/2020
 
-                        <span class="ml-auto">v0.5.3</span>
+                        <span class="ml-auto">v0.5.4(Pré-lançamento)</span>
 
                         <span class="ml-auto">
 
