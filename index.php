@@ -994,9 +994,9 @@
 
                     <p class="d-flex pt-4">
 
-                        11/2020
+                        05/2021
 
-                        <span class="ml-auto">v0.5.4(Pré-lançamento)</span>
+                        <span class="ml-auto">v1.0.0</span>
 
                         <span class="ml-auto">
 
