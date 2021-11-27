@@ -23,7 +23,7 @@
                 <img src="assets/dist/img/header/perfil.jpg" alt="Imagem de perfil" onclick="menu()">
 
                 <div class="gamertag">
-                    <span class="justify-content-center font-weight-bold">SnowRJ</span><br>
+                    <span class="justify-content-center font-weight-bold">svzzin</span><br>
                     <i class="fas fa-trophy text-bottom"></i>
                     <span class="justify-content-center text-bottom">44027</span>
                 </div>
@@ -994,9 +994,9 @@
 
                     <p class="d-flex pt-4">
 
-                        05/2021
+                        11/2021
 
-                        <span class="ml-auto">v1.0.0</span>
+                        <span class="ml-auto">v1.0.1</span>
 
                         <span class="ml-auto">
 
