@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="assets/dist/3rd/css-3rd/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/dist/css/index.css">
     <link rel="stylesheet" href="assets/src/font/RobotoCondensed/stylesheet.css">
-    <link rel="icon" href="assets/dist/img/header/icon.png"> <!-- linka o ícone da aba -->
+    <link rel="icon" href="assets/dist/img/header/icon.png">
     <title>Xbox Home</title>
 </head>
 
-<body onload="time()">
+<body onload="time() && inProgress()">
     <div class="fundo-escuro-bg"></div>
 
     <header class="container mt-4">
