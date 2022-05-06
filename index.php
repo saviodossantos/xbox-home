@@ -996,7 +996,7 @@
 
                         11/2021
 
-                        <span class="ml-auto">v1.0.1</span>
+                        <span class="ml-auto">v1.0.2</span>
 
                         <span class="ml-auto">
 
