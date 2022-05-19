@@ -12,7 +12,7 @@
     <title>Xbox Home</title>
 </head>
 
-<body onload="time() && inProgress()">
+<body onload="time()">
     <div class="fundo-escuro-bg"></div>
 
     <header class="container mt-4">
@@ -28,16 +28,13 @@
                     <span class="justify-content-center text-bottom">44027</span>
                 </div>
 
-
             </div>
 
             <div class="col-4 col-md-2 d-flex justify-content-end align-self-center">
 
                 <i class="fas fa-microphone-slash mt-1" id="microphone"></i>
                 <i class="fas fa-battery-full pl-3 mt-1" id="batery"></i>
-                <span class="justify-content-end ml-3 font-weight-bold" id="horario">
-                    <!-- hora atual sendo mostrada pelo js -->
-                </span>
+                <span class="justify-content-end ml-3 font-weight-bold" id="horario"></span>
 
             </div>
         </div>
@@ -230,8 +227,7 @@
 
                 </a>
 
-                <a href="https://www.microsoft.com/pt-br/p/state-of-decay-2-juggernaut-edition/9nt4x7p8b9nb"
-                    target="_blank">
+                <a href="https://www.microsoft.com/pt-br/p/state-of-decay-2-juggernaut-edition/9nt4x7p8b9nb" target="_blank">
 
                     <div class="card pin11 mt-2">
                         <div class="sub-card">
@@ -913,8 +909,7 @@
 
             <div class="col-12 col-md-3 pr-2px d-none d-md-block">
 
-                <a href="https://www.microsoft.com/pt-br/p/tom-clancys-rainbow-six-siege-deluxe-edition/9p30k2nxwh82"
-                    target="_blank">
+                <a href="https://www.microsoft.com/pt-br/p/tom-clancys-rainbow-six-siege-deluxe-edition/9p30k2nxwh82" target="_blank">
                     <div class="card mt-1 banner4">
 
                         <p class="mt-auto ml-2">
@@ -985,7 +980,7 @@
 
                     <p>Todo conteúdo aqui terceirizado é licenciado através de creative commons e totalmente sem fins
                         lucrativos.</p>
-                    
+
                     <p>*As marcas Xbox, Ori and the Will of the Wisps, Cyberpunk 2077, Xbox Game Pass, No Man's Sky, Resident Evil, FIFA, Injustice, Call of Duty, Cuphead, Spotify, Prime Video, Netflix, Youtube, EA Play, State of Decay, Twitch, EDGE, Quantum Break, Telecine Play, Facebook Watch, Fortnite, Watch Dogs, Alien Isolation, World War Z, Hellblade, Astroneer, Rainbow Six, A Plague Tale: Innocence e outras são propriedades intelectuais que pertencem à terceiros.</p>
 
                     <p id="base">**baseado na OS Version 10.0.19041.3503 (Agosto, 2020)</p>
@@ -994,9 +989,9 @@
 
                     <p class="d-flex pt-4">
 
-                        11/2021
+                        05/2022
 
-                        <span class="ml-auto">v1.0.2</span>
+                        <span class="ml-auto">v1.1.0</span>
 
                         <span class="ml-auto">
 
