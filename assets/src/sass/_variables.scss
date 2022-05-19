@@ -1,6 +1,3 @@
-
-// Variáveis concentradas em um só arquivo
-
 //grid
 $grid-max-xxs: 359.98px;
 $grid-min-xs: 360px;
@@ -26,3 +23,31 @@ $anuncio: #7e7e7e;
 $blue-edge: #1E90FF;
 $red: #7c0f0f;
 $green: #008000;
+
+//keyframes
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromTop {
+    0% {
+        //   transform: translateY(-20%);
+        transform: rotateX(20deg);
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        //   transform: translateY(0);
+        transform: RotateX(0);
+        opacity: 1;
+    }
+}

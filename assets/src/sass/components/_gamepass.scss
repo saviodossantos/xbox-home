@@ -3,6 +3,7 @@
 .gamepass{
 
     margin-bottom: 7rem;
+    animation: 2.5s ease-out 0s 1 slideFromRight;
 
     & .card-gamepass{
         background-image: url(../img/gamepass/bg.jpg);

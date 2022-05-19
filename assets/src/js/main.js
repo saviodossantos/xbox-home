@@ -26,8 +26,5 @@ function menu() {
     )
 }
 
-function inProgress() {
-    alert("🚨 Atenção!🚨\n\n 🚧 🚜 Projeto ainda em desenvolvimento 🚜 🚧")
-}
+alert("🚨 Atenção!🚨\n\n 🚧 🚜 Projeto ainda em desenvolvimento 🚜 🚧")
 
-console.log(inProgress())

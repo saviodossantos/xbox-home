@@ -4,22 +4,27 @@
     margin-top: 120px;
     color: $black;
     margin-bottom: 7rem;
+    animation: 1s ease-out 0s 1 slideFromRight;
+    transform: translateX(20%, 0%);
 
-    @media(max-width: $grid-max-sm){
+    @media(max-width: $grid-max-sm) {
         margin-bottom: 5rem;
     }
 
-    & p{font-size: 1rem;}
+    & p {
+        font-size: 1rem;
+    }
 
-    & .card-principal { //maior box, ori
+    & .card-principal {
+        //maior box, ori
         height: 287px;
         background-image: url(../img/home/box1.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 45% center ;
+        background-position: 45% center;
 
         & p {
-            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 font-size: 16px;
             }
         }
@@ -34,67 +39,69 @@
             height: 100px;
         }
 
-        & i{
+        & i {
             font-size: 64px;
             color: $white;
 
-            @media(max-width: $grid-max-xxs){
+            @media(max-width: $grid-max-xxs) {
                 font-size: 38px;
             }
 
-            @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
                 font-size: 45px;
             }
 
-            @media(min-width: $grid-min-sm) and (max-width: $grid-max-md){
+            @media(min-width: $grid-min-sm) and (max-width: $grid-max-md) {
                 font-size: 50px;
             }
 
         }
 
-        & p{
-            @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+        & p {
+            @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm) {
                 font-size: 13px;
             }
 
-            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 font-size: 13px;
             }
         }
 
     }
 
-    & .descricao{
+    & .descricao {
         background-color: $fundo-descricao;
         margin: 0;
         padding: 5px 10px 5px 10px;
         opacity: 0;
         transition: opacity .5s;
+        border-bottom-left-radius: $border-radius-1;
+        border-bottom-right-radius: $border-radius-1;
 
-        @media(max-width: $grid-max-sm){
+        @media(max-width: $grid-max-sm) {
             opacity: 1;
             font-size: 14px;
-
         }
     }
 
-    & .card:hover .descricao{
+    & .card:hover .descricao {
         opacity: 1;
 
     }
 
-    & .box3 { //cyberpunk
+    & .box3 {
+        //cyberpunk
         background-image: url(../img/home/box3-md.jpg);
         background-repeat: no-repeat;
         background-size: 115%;
         background-position: center 73%;
 
-        @media(max-width: $grid-max-sm){
+        @media(max-width: $grid-max-sm) {
             background-size: 120%;
             background-position: top;
         }
 
-        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm) {
             background-size: 120%;
             background-position: center -16px;
         }
@@ -110,7 +117,8 @@
         }
     }
 
-    & .box4 { //gamepass
+    & .box4 {
+        //gamepass
         background-image: url(../img/home/box4.jpg);
         background-repeat: no-repeat;
         background-size: 133%;
@@ -135,7 +143,8 @@
 
     }
 
-    & .box6 { //no man's sky
+    & .box6 {
+        //no man's sky
         background-image: url(../img/home/box6.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -158,12 +167,13 @@
             background-position: 52% center;
         }
 
-        @media(min-width: $grid-min-lg){
+        @media(min-width: $grid-min-lg) {
             background-position: center;
         }
     }
 
-    & .box7 { //resident evil 7
+    & .box7 {
+        //resident evil 7
         background-image: url(../img/home/box7.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -201,25 +211,29 @@
         margin: 0;
     }
 
-    & .biblioteca, .anuncio1, .anuncio2, .atividade-recente {
+    & .biblioteca,
+    .anuncio1,
+    .anuncio2,
+    .atividade-recente {
         height: 120px;
 
-        & i{
+        & i {
             font-size: 64px;
             color: $white;
         }
 
     }
 
-    & .atividade-recente { //fifa 21
+    & .atividade-recente {
+        //fifa 21
 
-        &.pr-2px{
+        &.pr-2px {
             @media(max-width:$grid-max-sm) {
                 padding-right: 15px !important;
             }
         }
 
-        & .card{
+        & .card {
             height: 120px;
             background-image: url(../img/home/anuncio1.jpg);
             background-repeat: no-repeat;
@@ -233,7 +247,7 @@
             border-radius: 50px;
             box-shadow: 0 0 15px rgb(42, 42, 42);
 
-            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 width: 30px;
                 height: 30px;
             }
@@ -244,27 +258,28 @@
         }
     }
 
-    & .with-gold { //injustice 2
+    & .with-gold {
+        //injustice 2
 
-        &.pr-2px{
+        &.pr-2px {
             @media(max-width:$grid-max-sm) {
                 padding-right: 15px !important;
             }
         }
 
-        & .card{
+        & .card {
             height: 120px;
             background-image: url(../img/home/anuncio3.jpg);
             background-repeat: no-repeat;
             background-size: 170%;
             background-position: 85% -22px;
 
-            @media(max-width: $grid-max-sm){
+            @media(max-width: $grid-max-sm) {
                 background-size: 150%;
                 background-position: center -40px;
-            }            
+            }
 
-            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 background-size: 215%;
                 background-position: center -12px;
             }
@@ -274,11 +289,11 @@
             width: 17%;
             float: right;
 
-            @media(max-width: $grid-max-sm){
+            @media(max-width: $grid-max-sm) {
                 width: 15%;
             }
 
-            @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            @media(min-width: $grid-min-md) and (max-width: $grid-max-md) {
                 width: 20%;
             }
         }
@@ -288,27 +303,28 @@
         }
     }
 
-    & .anuncio { //black ops cold war
+    & .anuncio {
+        //black ops cold war
 
-        &.pr-2px{
+        &.pr-2px {
             @media(max-width:$grid-max-sm) {
                 padding-right: 15px !important;
             }
         }
-        
+
         & .card {
             height: 120px;
             background-image: url(../img/home/anuncio2.png);
             background-repeat: no-repeat;
             background-size: 100%;
-            background-position: center ;
+            background-position: center;
 
-            @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs) {
                 background-size: cover;
                 background-position: center -60px;
             }
-            
-            @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+
+            @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm) {
                 background-size: cover;
                 background-position: center 70%;
             }
@@ -318,14 +334,19 @@
             }
 
 
-            & p{color: $white; z-index: 1;}
-            
+            & p {
+                color: $white;
+                z-index: 1;
+            }
+
         }
 
-        & p{color: $anuncio;}
+        & p {
+            color: $anuncio;
+        }
     }
 
-    & .pr-2px{
+    & .pr-2px {
         padding: 0 0 0 2px;
 
         @media(max-width:$grid-max-sm) {
@@ -333,7 +354,7 @@
         }
     }
 
-    & .pl-2px{
+    & .pl-2px {
         padding: 0 2px 0 0;
 
         @media(max-width:$grid-max-sm) {
