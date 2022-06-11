@@ -18,5 +18,5 @@ O projeto está sendo atualizado aos poucos para rodar com express e ejs, sendo 
 - nodemon (opcional)
 > npm install nodemon
 
-Em caso de instalação do nodemon, utilizar ***npm start*** para rodar em localhost. Caso contrário, **node index** no terminal para renderizar localhost.
+Para renderizar o projeto em localhost, utilizar o comando **npm start** ou **node index** no terminal.
 Por padrão, a porta utilizada é 3000, mas você pode modificar no arquivo index.js linha 3.
