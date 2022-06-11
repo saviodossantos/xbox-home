@@ -15,6 +15,7 @@ function time() {
 
 }
 
+//funcao de click na imagem do perfil
 function menu() {
     alert("🚨 Você descobriu um recurso que (ainda) não está disponível!\n"
         + "Parabéns! 🥳🥳\n\n"
@@ -26,5 +27,10 @@ function menu() {
     )
 }
 
-alert("🚨 Atenção!🚨\n\n 🚧 🚜 Projeto ainda em desenvolvimento 🚜 🚧")
+//alert de ainda em desenvolvimento
+if (sessionStorage.length == 0){
+    let alerta = "🚨 Atenção!🚨\n\n 🚧 🚜 Projeto ainda em desenvolvimento 🚜 🚧"
 
+    alert(alerta)
+    sessionStorage.setItem("alerta", alerta)
+}

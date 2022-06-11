@@ -39,14 +39,12 @@ $green: #008000;
 
 @keyframes slideFromTop {
     0% {
-        //   transform: translateY(-20%);
         transform: rotateX(20deg);
         transform-origin: top;
         opacity: 0;
     }
 
     100% {
-        //   transform: translateY(0);
         transform: RotateX(0);
         opacity: 1;
     }

@@ -1222,12 +1222,20 @@ footer {
   color: #7e7e7e;
   animation: 3s ease-out 0s 1 slideFromTop;
 }
-footer a:link, footer :visited, footer :hover, footer :active {
-  text-decoration: none;
+footer span a:nth-child(2) i:hover {
+  color: #1E90FF;
 }
-footer a:link i, footer :visited i, footer :hover i, footer :active i {
+footer a i {
+  transition: 0.7s;
   color: #7e7e7e;
   font-size: 18px;
+}
+footer a i:hover {
+  transform: translateY(-0.3rem);
+  color: #FFFFFF;
+}
+footer a:link, footer :visited, footer :hover, footer :active {
+  text-decoration: none;
 }
 footer #base {
   font-size: 10px;
