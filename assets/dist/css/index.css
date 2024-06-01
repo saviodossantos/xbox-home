@@ -96,6 +96,8 @@ body .card .fundo-escuro {
   width: 100%;
   position: absolute;
   opacity: 0.7;
+  border-bottom-left-radius: 3.2px;
+  border-bottom-right-radius: 3.2px;
 }
 body .card:hover {
   box-shadow: 0 0 20px rgb(42, 42, 42);
@@ -280,8 +282,8 @@ header #microphone, header #batery, header #horario {
   padding: 5px 10px 5px 10px;
   opacity: 0;
   transition: opacity 0.5s;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 3.2px;
+  border-bottom-right-radius: 3.2px;
 }
 @media (max-width: 767.98px) {
   .recentes .descricao {
@@ -594,8 +596,8 @@ header #microphone, header #batery, header #horario {
   padding: 5px 10px;
   position: absolute;
   transition: opacity 0.5s;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 3.2px;
+  border-bottom-right-radius: 3.2px;
 }
 @media (max-width: 767.98px) {
   .pins .descricao {

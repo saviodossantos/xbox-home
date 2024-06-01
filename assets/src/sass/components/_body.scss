@@ -51,6 +51,8 @@ body {
             width: 100%;
             position: absolute;
             opacity: .7;
+            border-bottom-left-radius: $border-radius-1;
+            border-bottom-right-radius: $border-radius-1;
         }
 
         &:hover {
