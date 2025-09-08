@@ -3,8 +3,8 @@ function time() {
 
     let horario = new Date();
 
-    hora = horario.getHours();
-    minutos = horario.getMinutes();
+    var hora = horario.getHours();
+    var minutos = horario.getMinutes();
 
     if (hora.toString().length == 1) hora = '0' + hora;
     if (minutos.toString().length == 1) minutos = '0' + minutos;
@@ -16,9 +16,8 @@ function time() {
 }
 
 //funcao de click na imagem do perfil
-function menu() {
+function openMenu() {
     alert("🚨 Você descobriu um recurso que (ainda) não está disponível!\n"
-        + "Parabéns! 🥳🥳\n\n"
         + "Em breve:\n\n"
         + "➡ Seção configurações para personalizar opacidade e cor dos blocos;\n"
         + "➡ Seção Pessoas;\n"
