@@ -40,9 +40,6 @@
     opacity: 1;
   }
 }
-* {
-  font-family: roboto_condensedregular;
-}
 *::-webkit-scrollbar {
   width: 7px;
 }
@@ -50,15 +47,17 @@
   background-color: #7e7e7e;
   border-radius: 10px;
 }
+* {
+  font-family: roboto_condensedregular, Arial, Helvetica, sans-serif;
+}
 
 body {
-  background-color: #1a1a1d !important;
   background: url(../img/home/bg.jpg);
+  background-color: #1a1a1d !important;
   background-repeat: no-repeat;
   background-size: 130%;
   background-position: center -40px;
   color: #FFFFFF;
-  font-family: "RobotoCondensed", Arial, sans-serif;
 }
 @media (max-width: 359.98px) {
   body {
@@ -172,7 +171,6 @@ header .perfil img {
   height: 60px;
   border-radius: 50px;
   box-shadow: 0 0 15px rgb(42, 42, 42);
-  cursor: help;
 }
 header .perfil .gamertag {
   position: absolute;

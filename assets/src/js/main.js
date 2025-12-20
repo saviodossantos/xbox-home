@@ -3,8 +3,8 @@ function time() {
 
     let horario = new Date();
 
-    var hora = horario.getHours();
-    var minutos = horario.getMinutes();
+    let hora = horario.getHours();
+    let minutos = horario.getMinutes();
 
     if (hora.toString().length == 1) hora = '0' + hora;
     if (minutos.toString().length == 1) minutos = '0' + minutos;
@@ -15,7 +15,7 @@ function time() {
 
 }
 
-//funcao de click na imagem do perfil
+//funcao de click na imagem do perfil - DEPRECATED
 function openMenu() {
     alert("🚨 Você descobriu um recurso que (ainda) não está disponível!\n"
         + "Em breve:\n\n"

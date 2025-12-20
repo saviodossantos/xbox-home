@@ -3,18 +3,17 @@
 *{
     &::-webkit-scrollbar{width:7px;}
     &::-webkit-scrollbar-thumb{background-color:$anuncio; border-radius: 10px;}
-    font-family: roboto_condensedregular;
+    font-family: roboto_condensedregular, Arial, Helvetica, sans-serif;
 }
 
 body {
 
-    background-color: $fundo !important;
     background: url(../img/home/bg.jpg);
+    background-color: $fundo !important;
     background-repeat: no-repeat;
     background-size: 130%;
     background-position: center -40px;
     color: $white;
-    font-family: 'RobotoCondensed', Arial, sans-serif;
 
     @media(max-width: $grid-max-xxs){
         background-position: center 46px;
